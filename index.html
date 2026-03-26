@@ -1,655 +1,545 @@
-<!-- FILE: index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
   <title>Utah Walk In Tubs | One Day Installation or DIY Savings | UtahWalkInTubs.com</title>
-  <meta name="description" content="Utah walk in tubs with one day installation options or DIY savings. Compare sizes, doors, jet systems, fast drain, and warranties. Call 1-888-779-2284 (BATH) for a fast quote." />
+  <meta name="description" content="Utah walk in tubs with one day installation options or DIY savings. Compare sizes, doors, jet systems, fast drain, and warranties. Serving all 29 Utah counties. Call 1-888-779-2284 (BATH)." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://utahwalkintubs.com/" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Utah Walk In Tubs | One Day Installation or DIY Savings" />
-  <meta property="og:description" content="A practical Utah buyer’s guide to choosing the right walk in tub—fit, comfort, fast drain, hydrotherapy, and installation options." />
+  <meta property="og:description" content="A practical Utah buyer's guide to choosing the right walk in tub — fit, comfort, fast drain, hydrotherapy, and installation options. Serving all Utah counties." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://utahwalkintubs.com/" />
   <meta property="og:image" content="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/walk-in-tub-image-scaled.jpg" />
-
-  <!-- Performance: preconnect -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://www.agingsafelybaths.com" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <style>
-    :root{
-      --ink:#0b0f14;
-      --muted:#4b5a6a;
-      --line:#e6ebf0;
-      --bg:#ffffff;
-      --soft:#f6f9fb;
-      --soft2:#f2f7fb;
-      --accent:#0a6f7f;
-      --accent2:#2bb0c6;
-      --warn:#b35300;
-      --good:#1b7f5a;
-      --shadow: 0 10px 26px rgba(13, 30, 45, .10);
-      --shadow2: 0 14px 34px rgba(13, 30, 45, .14);
+    :root {
+      --teal:   #0a6f7f;
+      --teal2:  #2bb0c6;
+      --teal3:  #e0f5f9;
+      --teal4:  #f0fbfd;
+      --dark:   #0b0f14;
+      --ink:    #0f1a24;
+      --muted:  #4b5a6a;
+      --light:  #f6f9fb;
+      --white:  #ffffff;
+      --line:   #e2eaf0;
+      --gold:   #c87d2a;
+      --good:   #1b7f5a;
+      --shadow: 0 12px 28px rgba(13,30,45,.10);
+      --shadow2:0 16px 38px rgba(13,30,45,.14);
       --radius: 18px;
-      --radius2: 26px;
-      --max: 1120px;
+      --radius2:26px;
+      --max:    1120px;
     }
-
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--ink);
-      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 40%, #ffffff 100%);
-      line-height:1.5;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.72;
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
     }
-    a{color:var(--accent); text-decoration: none}
-    a:hover{text-decoration: underline}
-    img{max-width:100%; height:auto; display:block}
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; display: block; }
 
-    .topbar{
-      background:#0a6f7f;
-      color:#fff;
-      font-weight:700;
-      text-align:center;
-      padding:10px 14px;
-      font-size:14px;
-      letter-spacing:.2px;
+    /* ============================================================
+       TOP BAR
+    ============================================================ */
+    .topbar {
+      background: var(--teal);
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      padding: 9px 1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.01em;
     }
-    .topbar a{color:#fff; text-decoration: underline}
-    .header{
-      position:sticky; top:0; z-index:50;
-      background: rgba(255,255,255,.92);
-      backdrop-filter: blur(10px);
-      border-bottom:1px solid var(--line);
-    }
-    .navwrap{
-      max-width:var(--max);
-      margin:0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      padding:12px 16px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width: 220px;
-    }
-    .brand img{
-      width: 190px;
-      height:auto;
-    }
-    .navlinks{
-      display:flex;
-      gap:18px;
-      align-items:center;
-      flex-wrap:wrap;
-      justify-content:center;
-    }
-    .navlinks a{
-      color:var(--ink);
-      font-weight:700;
-      font-size:14px;
-      padding:10px 10px;
-      border-radius: 12px;
-    }
-    .navlinks a:hover{
-      background: var(--soft);
-      text-decoration:none;
-    }
-    .ctaRight{
-      display:flex; gap:10px; align-items:center; justify-content:flex-end;
-      min-width: 260px;
-    }
-    .callPill{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 14px;
-      border-radius: 999px;
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow: 0 8px 18px rgba(13,30,45,.08);
-      font-weight:900;
-      color:var(--ink);
-      white-space:nowrap;
-    }
-    .callPill small{
-      display:block; font-weight:800; color:var(--muted); font-size:11px; letter-spacing:.2px;
-    }
-    .callPill span{
-      display:block; font-size:14px;
-    }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:12px 14px;
-      border-radius: 14px;
-      font-weight:900;
-      border:1px solid var(--line);
-      background: #fff;
-      color: var(--ink);
-      box-shadow: 0 10px 20px rgba(13,30,45,.10);
-      cursor:pointer;
-      text-decoration:none !important;
-      white-space:nowrap;
-    }
-    .btn.primary{
-      border:none;
-      color:#fff;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-      box-shadow: 0 14px 30px rgba(10,111,127,.26);
-    }
+    .topbar a { color: #fff; text-decoration: underline; }
 
-    .heroStrip{
-      border-bottom:1px solid var(--line);
-      background: linear-gradient(180deg, #ffffff 0%, #f7fcff 100%);
+    /* ============================================================
+       HEADER — FIXED
+    ============================================================ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 2px solid var(--teal3);
+      box-shadow: 0 2px 16px rgba(13,30,45,.08);
     }
-    .heroStrip .inner{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:26px 16px;
-      text-align:center;
+    .navwrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      gap: 1rem;
     }
-    .heroStrip .big{
-      font-weight: 900;
-      letter-spacing: .6px;
-      font-size: 22px;
-      text-transform: uppercase;
-      margin:0;
-      color: var(--ink);
+    .brand a { display: block; }
+    .brand img {
+      height: 110px;
+      width: auto;
+      display: block;
     }
-    .heroStrip .sub{
-      margin:10px auto 0;
-      max-width: 920px;
+    .navlinks {
+      display: flex;
+      gap: 0.2rem;
+      align-items: center;
+    }
+    .navlinks a {
       color: var(--muted);
-      font-weight: 650;
-      font-size: 15px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: 10px;
+      white-space: nowrap;
+      transition: color 0.15s, background 0.15s;
+    }
+    .navlinks a:hover { color: var(--teal); background: var(--teal3); text-decoration: none; }
+    .cta-right {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .call-pill {
+      display: inline-flex;
+      flex-direction: column;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      box-shadow: 0 6px 16px rgba(13,30,45,.08);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .call-pill small { display: block; font-weight: 800; color: var(--muted); font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .call-pill strong { display: block; font-size: 0.9rem; font-weight: 900; color: var(--ink); }
+    .call-pill:hover { background: var(--teal3); text-decoration: none; }
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.55rem 1.1rem;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 0.88rem;
+      border: none;
+      color: #fff;
+      background: linear-gradient(135deg, var(--teal), var(--teal2));
+      box-shadow: 0 10px 22px rgba(10,111,127,.28);
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-nav:hover { transform: translateY(-1px); box-shadow: 0 14px 28px rgba(10,111,127,.36); text-decoration: none; color: #fff; }
+
+    /* hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 0.45rem 0.55rem; cursor: pointer; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform 0.22s, opacity 0.18s; }
+    .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; inset: 0; background: rgba(11,15,20,.55); z-index: 300; }
+    .mobile-nav.open { display: block; }
+    .mobile-drawer { position: absolute; top: 0; right: 0; width: min(88vw,310px); height: 100%; background: var(--white); padding: 1.5rem 1.25rem; overflow-y: auto; box-shadow: -6px 0 28px rgba(0,0,0,.16); transform: translateX(100%); transition: transform 0.26s cubic-bezier(0.4,0,0.2,1); }
+    .mobile-nav.open .mobile-drawer { transform: translateX(0); }
+    .drawer-head { display: flex; justify-content: flex-end; margin-bottom: 1.25rem; }
+    .drawer-close { background: var(--light); border: 1px solid var(--line); border-radius: 8px; padding: 0.4rem 0.75rem; font-size: 0.85rem; font-weight: 700; cursor: pointer; }
+    .mobile-drawer nav a { display: block; padding: 0.8rem 0; border-bottom: 1px solid var(--line); font-weight: 700; font-size: 0.97rem; color: var(--ink); }
+    .mobile-drawer nav a:hover { color: var(--teal); text-decoration: none; }
+    .mobile-cta { margin-top: 1.25rem; background: var(--teal3); border-radius: 12px; padding: 1rem; text-align: center; }
+    .mobile-cta .lbl { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 0.25rem; }
+    .mobile-cta a { font-size: 1.05rem; font-weight: 900; color: var(--teal); }
+
+    /* ============================================================
+       HERO STRIP — BIG BOLD BLACK + WHITE SPACE
+    ============================================================ */
+    .hero-strip {
+      background: var(--white);
+      border-bottom: 3px solid var(--teal3);
+      padding: 2.5rem 1.25rem;
+    }
+    .hero-strip-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hero-strip h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.85rem);
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .hero-strip h2 .accent { color: var(--teal); }
+    .hero-strip .sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 780px;
+      margin: 0 auto 1.25rem;
+      font-weight: 500;
+    }
+    .hero-strip-btns {
+      display: flex;
+      gap: 0.85rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 1rem;
+      border: none;
+      color: #fff;
+      background: linear-gradient(135deg, var(--teal), var(--teal2));
+      box-shadow: 0 14px 30px rgba(10,111,127,.30);
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 38px rgba(10,111,127,.40); text-decoration: none; color: #fff; }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.82rem 1.6rem;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border: 2px solid rgba(10,111,127,.3);
+      color: var(--teal);
+      background: var(--white);
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn-outline:hover { background: var(--teal3); border-color: rgba(10,111,127,.5); text-decoration: none; }
+    .trust-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+    .tpill { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.85rem; border-radius: 999px; background: var(--white); border: 1px solid var(--line); font-size: 0.82rem; font-weight: 700; color: var(--muted); box-shadow: 0 4px 10px rgba(13,30,45,.06); }
+    .tpill .dot { width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--teal2)); flex-shrink: 0; }
+
+    /* ============================================================
+       ZIP TICKER
+    ============================================================ */
+    .zip-ticker-wrap {
+      background: var(--teal);
+      overflow: hidden;
+      padding: 0.65rem 0;
+      white-space: nowrap;
+    }
+    .zip-ticker {
+      display: inline-block;
+      animation: tickerScroll 55s linear infinite;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ============================================================
+       MAIN LAYOUT
+    ============================================================ */
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+    .section { max-width: var(--max); margin: 0 auto; padding: 2.5rem 1.25rem; }
+    .section-label { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); margin-bottom: 0.4rem; }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    h2.section-h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.55rem, 3vw, 2.15rem);
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.18;
+      margin-bottom: 0.65rem;
+    }
+    h3.card-h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
     }
 
-    .section{
-      max-width:var(--max);
-      margin:0 auto;
-      padding: 34px 16px;
-    }
+    .lead { font-size: 1.02rem; color: var(--muted); margin-bottom: 1.1rem; max-width: 68ch; }
+    .bigText { font-size: 0.97rem; color: var(--muted); margin-bottom: 0.85rem; }
+    .bigText:last-child { margin-bottom: 0; }
 
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap: 18px;
-      align-items: stretch;
-    }
-    @media (max-width: 980px){
-      .heroGrid{grid-template-columns:1fr}
-      .ctaRight{min-width: unset}
-      .brand{min-width: unset}
-    }
-
-    .card{
-      background:#fff;
-      border:1px solid var(--line);
+    /* Cards */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
       border-radius: var(--radius2);
       box-shadow: var(--shadow);
-      overflow:hidden;
+      overflow: hidden;
     }
-    .heroCard{
-      padding: 28px 26px;
-      position:relative;
-      background: radial-gradient(900px 320px at 20% 0%, rgba(43,176,198,.16), transparent 60%),
-                  radial-gradient(900px 320px at 90% 10%, rgba(10,111,127,.10), transparent 55%),
-                  #ffffff;
+    .card-pad { padding: 1.75rem; }
+    .heroCard {
+      background: radial-gradient(900px 320px at 20% 0%, rgba(43,176,198,.14), transparent 60%),
+                  radial-gradient(900px 320px at 90% 10%, rgba(10,111,127,.08), transparent 55%), #fff;
     }
-    .kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding: 10px 14px;
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.55rem 1rem;
       border-radius: 999px;
-      background: #eef8fb;
-      border: 1px solid #d8eef3;
+      background: var(--teal3);
+      border: 1px solid rgba(10,111,127,.18);
       font-weight: 900;
-      color: #0a6f7f;
-      letter-spacing:.25px;
-      font-size: 13px;
-      margin-bottom: 14px;
+      color: var(--teal);
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
     }
-    h1{
-      margin: 0 0 10px;
-      font-size: 44px;
-      line-height: 1.06;
-      font-weight: 950;
-      letter-spacing: -.7px;
-      color: var(--ink);
-    }
-    .lead{
-      margin: 0 0 18px;
-      max-width: 860px;
-      font-size: 17px;
-      color: var(--muted);
-      font-weight: 650;
-    }
-    .bullets{
-      display:grid;
+    .bullets {
+      display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px 14px;
-      margin: 18px 0 0;
-      padding:0;
-      list-style:none;
+      gap: 0.65rem;
+      margin: 1.25rem 0 0;
+      list-style: none;
     }
-    .bullets li{
-      display:flex; gap:10px; align-items:flex-start;
-      padding: 12px 12px;
-      background: #f7fbff;
-      border: 1px solid #e1edf6;
-      border-radius: 16px;
-      font-weight: 800;
+    .bullets li {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      padding: 0.85rem 1rem;
+      background: #f5fbfd;
+      border: 1px solid #d8eef4;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 0.92rem;
       color: var(--ink);
     }
-    .dot{
-      width: 10px; height: 10px; border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-      margin-top: 6px;
-      flex: 0 0 auto;
+    .dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), var(--teal2));
+      margin-top: 0.35rem; flex-shrink: 0;
     }
-    .mediaCard{
-      padding:0;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      background:#fff;
-    }
-    .mediaTop{
-      padding:18px 18px 0;
-    }
-    .mediaTop h2{
-      margin:0;
-      font-size: 18px;
-      font-weight: 950;
-      letter-spacing:-.2px;
-      color:var(--ink);
-    }
-    .mediaTop p{
-      margin:10px 0 0;
-      color:var(--muted);
-      font-weight:650;
-      font-size:14px;
-    }
-    .mediaImage{
-      padding: 14px 18px 18px;
-    }
-    .mediaImage img{
-      border-radius: 18px;
-      border:1px solid var(--line);
-      box-shadow: 0 14px 30px rgba(13,30,45,.12);
-    }
+    .mediaCard { padding: 0; display: flex; flex-direction: column; background: #fff; }
+    .mediaTop { padding: 1.25rem 1.25rem 0; }
+    .mediaTop h2 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 900; color: var(--ink); margin-bottom: 0.45rem; }
+    .mediaTop p { color: var(--muted); font-size: 0.88rem; margin-top: 0.4rem; }
+    .mediaImage { padding: 0.85rem 1.1rem 1.1rem; }
+    .mediaImage img { border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 14px 30px rgba(13,30,45,.12); }
 
-    .contentGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
-    @media (max-width: 980px){
-      .contentGrid{grid-template-columns:1fr}
-      h1{font-size: 38px}
-    }
-
-    .bigTitle{
-      font-size: 34px;
-      font-weight: 950;
-      letter-spacing:-.6px;
-      line-height: 1.08;
-      margin: 0 0 10px;
-      color: var(--ink);
-    }
-    .bigText{
-      font-size: 16px;
-      color: var(--muted);
-      font-weight: 650;
-      margin: 0 0 14px;
-    }
-
-    .callout{
-      padding: 18px 18px;
+    .callout {
+      padding: 1.25rem;
       border-radius: var(--radius);
-      border: 1px solid #dceff4;
-      background: linear-gradient(180deg, #f2fbff 0%, #ffffff 100%);
-      box-shadow: 0 12px 26px rgba(13,30,45,.08);
+      border: 1px solid #d0ecf4;
+      background: linear-gradient(180deg, #f0fbff 0%, #fff 100%);
+      box-shadow: 0 10px 24px rgba(13,30,45,.07);
     }
-    .callout strong{color: var(--ink)}
-    .callout .mini{
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 14px;
-    }
+    .callout strong { color: var(--ink); display: block; margin-bottom: 0.35rem; }
+    .callout .mini { margin-top: 0.6rem; color: var(--muted); font-size: 0.85rem; }
 
-    .twoCol{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items:start;
-      margin-top: 18px;
-    }
-    @media (max-width: 980px){
-      .twoCol{grid-template-columns:1fr}
-    }
+    /* Grids */
+    .heroGrid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 1.25rem; align-items: stretch; }
+    .contentGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.25rem; }
+    .twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: start; margin-top: 1.25rem; }
+    .threeCol { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-top: 1.25rem; }
+    .imgRow { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.85rem; margin-top: 0.85rem; }
 
-    .imgRow{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 12px;
-      margin-top: 12px;
-    }
-    @media (max-width: 980px){
-      .imgRow{grid-template-columns:1fr}
-    }
-    .imgTile{
-      border-radius: 18px;
-      border:1px solid var(--line);
-      overflow:hidden;
-      box-shadow: 0 14px 30px rgba(13,30,45,.10);
-      background:#fff;
-    }
-    .imgTile figcaption{
-      padding: 10px 12px 12px;
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 13px;
-    }
+    .imgTile { border-radius: var(--radius); border: 1px solid var(--line); overflow: hidden; box-shadow: var(--shadow); background: #fff; }
+    .imgTile img { width: 100%; }
+    .imgTile figcaption { padding: 0.6rem 0.85rem 0.75rem; color: var(--muted); font-size: 0.8rem; }
 
-    /* SafeStep-inspired form styling (no slider, no multi-step; just premium UX) */
-    .formCard{
-      border-radius: var(--radius2);
-      overflow:hidden;
-      border: 1px solid #dbe8ee;
-      box-shadow: var(--shadow2);
-      background:#fff;
-    }
-    .formHeader{
-      padding: 18px 18px 16px;
-      background: radial-gradient(900px 320px at 15% 0%, rgba(43,176,198,.22), transparent 55%),
-                  radial-gradient(900px 320px at 95% 20%, rgba(10,111,127,.14), transparent 60%),
-                  linear-gradient(180deg, #f0fbff 0%, #ffffff 100%);
-      border-bottom: 1px solid #dfeaf0;
-    }
-    .formHeader .topline{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      flex-wrap:wrap;
-    }
-    .formHeader .badge{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: #e9f7fb;
-      border: 1px solid #d4eef5;
-      font-weight: 950;
-      color: var(--accent);
-      letter-spacing:.2px;
-      font-size: 12px;
-    }
-    .formHeader h3{
-      margin: 12px 0 8px;
-      font-size: 22px;
-      font-weight: 950;
-      letter-spacing:-.3px;
-      color: var(--ink);
-    }
-    .formHeader p{
-      margin:0;
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 14px;
-      max-width: 720px;
-    }
-    .formBody{
-      padding: 18px;
-    }
-    .grid2{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    @media (max-width: 720px){
-      .grid2{grid-template-columns:1fr}
-    }
-    label{
-      display:block;
-      font-weight: 900;
-      font-size: 13px;
-      letter-spacing:.2px;
-      margin: 0 0 6px;
-      color: var(--ink);
-    }
-    .field{
-      background: #fff;
-      border: 1px solid #d8e3ea;
-      border-radius: 16px;
-      padding: 12px 12px;
-      font-size: 16px;
-      width: 100%;
-      outline:none;
-      transition: border-color .15s ease, box-shadow .15s ease, transform .08s ease;
-    }
-    .field:focus{
-      border-color: rgba(10,111,127,.55);
-      box-shadow: 0 0 0 5px rgba(43,176,198,.18);
-    }
-    .help{
-      margin: 8px 0 0;
-      font-size: 12px;
-      color: var(--muted);
-      font-weight: 650;
-    }
-    textarea.field{min-height: 110px; resize: vertical}
-    .formFooter{
-      border-top: 1px solid #e2edf3;
-      padding: 14px 18px 18px;
-      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
-    }
-    .trustRow{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-    @media (max-width: 720px){
-      .trustRow{grid-template-columns:1fr}
-    }
-    .trustPill{
-      display:flex; gap:10px; align-items:flex-start;
-      border: 1px solid #e0eef4;
-      background: #f4fbfe;
-      border-radius: 16px;
-      padding: 10px 12px;
-      color: var(--ink);
-      font-weight: 850;
-      font-size: 13px;
-    }
-    .trustPill span{
-      display:block;
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 12px;
-      margin-top: 2px;
-    }
-    .submitRow{
-      display:flex; gap: 10px; align-items:center; justify-content:space-between;
-      flex-wrap:wrap;
-    }
-    .submitBtn{
-      border:none;
-      padding: 14px 16px;
-      border-radius: 16px;
-      font-weight: 950;
-      font-size: 15px;
-      color:#fff;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-      box-shadow: 0 16px 34px rgba(10,111,127,.26);
-      cursor:pointer;
-      min-width: 220px;
-    }
-    .submitBtn:active{transform: translateY(1px)}
-    #formStatus{
-      font-weight: 850;
-      color: var(--muted);
-      font-size: 13px;
-      min-height: 18px;
-    }
-    .smallNote{
-      font-size: 12px;
-      color: var(--muted);
-      font-weight: 650;
-      max-width: 640px;
-    }
-
-    /* FAQ */
-    .faqWrap{
-      margin-top: 16px;
-      display:grid;
-      gap: 10px;
-    }
-    details{
+    /* ============================================================
+       COLOR FEATURE CARDS
+    ============================================================ */
+    .feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.25rem; }
+    .feat-card {
+      border-radius: var(--radius);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 14px 14px;
-      background:#fff;
-      box-shadow: 0 10px 20px rgba(13,30,45,.06);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+      background: var(--white);
     }
-    summary{
-      cursor:pointer;
-      font-weight: 950;
-      font-size: 15px;
-      color: var(--ink);
-      list-style:none;
-    }
-    summary::-webkit-details-marker{display:none}
-    details p{
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-weight: 650;
-    }
+    .feat-card.blue { background: linear-gradient(160deg, #e8f8fb, #fff); border-color: rgba(43,176,198,.25); }
+    .feat-card.teal { background: linear-gradient(160deg, #e0f5f9, #fff); border-color: rgba(10,111,127,.2); }
+    .feat-card.gold { background: linear-gradient(160deg, #fdf4e8, #fff); border-color: rgba(200,125,42,.2); }
+    .feat-icon { font-size: 1.75rem; margin-bottom: 0.6rem; }
+    .feat-card h3 { font-size: 1rem; font-weight: 800; color: var(--ink); margin-bottom: 0.4rem; }
+    .feat-card p { font-size: 0.87rem; color: var(--muted); margin: 0; }
 
-    /* Footer */
-    footer{
-      border-top: 1px solid var(--line);
-      background: #ffffff;
-    }
-    .footerInner{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 26px 16px;
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 18px;
-    }
-    @media (max-width: 980px){
-      .footerInner{grid-template-columns:1fr}
-    }
-    .footTitle{
-      font-weight: 950;
-      font-size: 16px;
-      margin: 0 0 10px;
-      color: var(--ink);
-    }
-    .footText{
-      margin:0;
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 14px;
-    }
-    .footLinks{
-      display:flex;
-      flex-direction:column;
-      gap: 8px;
-      font-weight: 850;
-    }
-    .legal{
-      border-top:1px solid var(--line);
-      background:#fbfdff;
-    }
-    .legalInner{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 14px 16px;
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 12px;
-      display:flex;
-      gap: 10px;
-      justify-content:space-between;
-      flex-wrap:wrap;
-    }
-    .legal a{font-weight:850}
+    /* ============================================================
+       CHART
+    ============================================================ */
+    .chartCard { padding: 1.35rem; border-radius: var(--radius); border: 1px solid #d8eef4; background: linear-gradient(180deg, #f5fbff 0%, #fff 100%); box-shadow: var(--shadow); }
+    .chartCard h4 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 900; color: var(--ink); margin-bottom: 0.85rem; }
+    .bars { display: grid; gap: 0.75rem; }
+    .barRow { display: grid; grid-template-columns: 160px 1fr 54px; gap: 0.65rem; align-items: center; }
+    .barLabel { font-weight: 800; color: var(--ink); font-size: 0.85rem; }
+    .bar { height: 13px; border-radius: 999px; background: #e2edf3; border: 1px solid #d4e8f0; overflow: hidden; }
+    .bar > span { display: block; height: 100%; width: 0; border-radius: 999px; background: linear-gradient(135deg, var(--teal), var(--teal2)); transition: width 1.4s cubic-bezier(.4,0,.2,1); }
+    .barNum { font-weight: 900; color: var(--teal); font-size: 0.8rem; text-align: right; }
+    .help { font-size: 0.75rem; color: var(--muted); margin-top: 0.65rem; }
 
-    /* Simple chart */
-    .chartCard{
-      padding: 16px 16px 14px;
+    /* ============================================================
+       COUNTIES SECTION
+    ============================================================ */
+    .counties-section {
+      background: linear-gradient(160deg, var(--teal3) 0%, #f0fdf4 50%, #fff 90%);
+      border-radius: calc(var(--radius2) + 4px);
+      padding: 2rem 1.75rem;
+      border: 1px solid rgba(10,111,127,.14);
+      box-shadow: var(--shadow);
+    }
+    .county-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; margin-top: 1rem; }
+    .county-chip { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 0.3rem 0.55rem; font-size: 0.78rem; font-weight: 600; color: var(--muted); text-align: center; }
+    .county-chip.hot { background: var(--teal3); border-color: rgba(10,111,127,.25); color: var(--teal); font-weight: 800; }
+
+    /* ============================================================
+       FORM — RESTYLED
+    ============================================================ */
+    .formCard { border-radius: var(--radius2); overflow: hidden; border: 1px solid #cce8f0; box-shadow: var(--shadow2); background: #fff; }
+    .formHeader {
+      padding: 1.5rem 1.5rem 1.25rem;
+      background: radial-gradient(900px 320px at 15% 0%, rgba(43,176,198,.2), transparent 55%),
+                  linear-gradient(180deg, #eef9fc 0%, #fff 100%);
+      border-bottom: 1px solid #d4eef5;
+    }
+    .formHeader .topline { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
+    .formHeader .badge { display: inline-flex; align-items: center; padding: 0.45rem 0.85rem; border-radius: 999px; background: rgba(10,111,127,.1); border: 1px solid rgba(10,111,127,.2); font-weight: 900; color: var(--teal); font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase; }
+    .formHeader h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 900; color: var(--ink); margin: 0.75rem 0 0.35rem; }
+    .formHeader p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    .formBody { padding: 1.35rem; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+    label { display: block; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.3rem; color: var(--ink); }
+    .field {
+      background: #fff;
+      border: 1.5px solid #d0e6ef;
+      border-radius: 12px;
+      padding: 0.7rem 0.85rem;
+      font-size: 0.95rem;
+      width: 100%;
+      outline: none;
+      font-family: inherit;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .field:focus { border-color: rgba(10,111,127,.55); box-shadow: 0 0 0 4px rgba(43,176,198,.16); }
+    textarea.field { min-height: 95px; resize: vertical; }
+    .help { margin: 0.4rem 0 0; font-size: 0.75rem; color: var(--muted); }
+    .formFooter { border-top: 1px solid #e0ecf2; padding: 1.1rem 1.35rem 1.35rem; background: linear-gradient(180deg, #fff 0%, #f8fdff 100%); }
+    .trustRow { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-bottom: 0.85rem; }
+    .trustPill { display: flex; gap: 0.6rem; align-items: flex-start; border: 1px solid #d8eef4; background: #f0fbfd; border-radius: 14px; padding: 0.65rem 0.85rem; font-weight: 800; font-size: 0.85rem; color: var(--ink); }
+    .trustPill span { display: block; color: var(--muted); font-weight: 500; font-size: 0.78rem; margin-top: 0.15rem; }
+    .submitRow { display: flex; gap: 0.65rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .submitBtn { border: none; padding: 0.9rem 2rem; border-radius: 14px; font-weight: 900; font-size: 1rem; color: #fff; background: linear-gradient(135deg, var(--teal), var(--teal2)); box-shadow: 0 14px 32px rgba(10,111,127,.28); cursor: pointer; transition: transform .15s, box-shadow .15s; font-family: inherit; }
+    .submitBtn:hover { transform: translateY(-1px); box-shadow: 0 18px 38px rgba(10,111,127,.36); }
+    #formStatus { font-weight: 800; font-size: 0.88rem; min-height: 1rem; }
+    .smallNote { font-size: 0.75rem; color: var(--muted); margin-top: 0.75rem; }
+
+    /* ============================================================
+       FAQ
+    ============================================================ */
+    .faqWrap { margin-top: 1rem; display: grid; gap: 0.6rem; }
+    .faqWrap.two-col { grid-template-columns: 1fr 1fr; }
+    details {
+      border: 1px solid var(--line);
       border-radius: var(--radius);
-      border: 1px solid #e1edf6;
-      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
-      box-shadow: 0 12px 26px rgba(13,30,45,.08);
+      padding: 0.9rem 1.1rem;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(13,30,45,.06);
+      transition: border-color 0.2s;
     }
-    .chartCard h4{
-      margin:0 0 10px;
-      font-size: 16px;
-      font-weight: 950;
+    details[open] { border-color: rgba(10,111,127,.3); }
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 0.93rem;
       color: var(--ink);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.65rem;
+      user-select: none;
     }
-    .bars{
-      display:grid;
-      gap: 10px;
-    }
-    .barRow{
-      display:grid;
-      grid-template-columns: 160px 1fr 54px;
-      gap: 10px;
-      align-items:center;
-    }
-    @media (max-width: 720px){
-      .barRow{grid-template-columns: 1fr}
-    }
-    .barLabel{
-      font-weight: 900;
-      color: var(--ink);
-      font-size: 13px;
-    }
-    .bar{
-      height: 14px;
-      border-radius: 999px;
-      background: #eaf3f7;
-      border:1px solid #dbe8ee;
-      overflow:hidden;
-    }
-    .bar > span{
-      display:block;
-      height:100%;
-      width:0%;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-    }
-    .barNum{
-      font-weight: 950;
-      color: var(--muted);
-      font-size: 12px;
-      text-align:right;
-    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.1rem; font-weight: 400; color: var(--teal); flex-shrink: 0; transition: transform 0.2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details[open] summary { color: var(--teal); }
+    details p { margin: 0.65rem 0 0; color: var(--muted); font-size: 0.9rem; line-height: 1.68; }
 
-    .sr-only{
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-      overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer { border-top: 1px solid var(--line); background: var(--dark); color: rgba(255,255,255,.65); margin-top: 1px; }
+    .footerInner { max-width: var(--max); margin: 0 auto; padding: 2.5rem 1.25rem 1.75rem; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; }
+    .foot-logo-wrap { display: inline-block; background: #fff; border-radius: 10px; padding: 0.4rem 0.6rem; margin-bottom: 0.85rem; }
+    .foot-logo-wrap img { height: 52px; width: auto; }
+    .footTitle { font-weight: 800; color: #fff; margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .footText { font-size: 0.85rem; line-height: 1.65; margin-bottom: 0.45rem; }
+    .footText a { color: rgba(255,255,255,.75); font-weight: 700; }
+    .footText a:hover { color: var(--teal2); text-decoration: none; }
+    .footLinks { display: flex; flex-direction: column; gap: 0.4rem; }
+    .footLinks a { color: rgba(255,255,255,.6); font-size: 0.85rem; font-weight: 500; }
+    .footLinks a:hover { color: var(--teal2); text-decoration: none; }
+    .legal { border-top: 1px solid rgba(255,255,255,.08); background: transparent; }
+    .legalInner { max-width: var(--max); margin: 0 auto; padding: 0.85rem 1.25rem 1.5rem; color: rgba(255,255,255,.35); font-size: 0.77rem; display: flex; gap: 0.65rem; justify-content: space-between; flex-wrap: wrap; }
+    .legalInner a { font-weight: 700; color: rgba(255,255,255,.45); }
+    .legalInner a:hover { color: var(--teal2); text-decoration: none; }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 980px) {
+      .heroGrid { grid-template-columns: 1fr; }
+      .contentGrid { grid-template-columns: 1fr; }
+      .twoCol { grid-template-columns: 1fr; }
+      .threeCol { grid-template-columns: 1fr 1fr; }
+      .feat-grid { grid-template-columns: 1fr 1fr; }
+      .imgRow { grid-template-columns: 1fr; }
+      .county-grid { grid-template-columns: repeat(3,1fr); }
+      .faqWrap.two-col { grid-template-columns: 1fr; }
+      .footerInner { grid-template-columns: 1fr; }
+      .barRow { grid-template-columns: 1fr; }
     }
+    @media (max-width: 860px) {
+      .navlinks { display: none; }
+      .cta-right .call-pill { display: none; }
+      .hamburger { display: flex; }
+      .navwrap { height: auto; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+      .brand img { height: 90px; }
+      .feat-grid { grid-template-columns: 1fr; }
+      .threeCol { grid-template-columns: 1fr; }
+      .bullets { grid-template-columns: 1fr; }
+      .county-grid { grid-template-columns: repeat(2,1fr); }
+      .trustRow { grid-template-columns: 1fr; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   </style>
 
-  <!-- Schema: Organization / LocalBusiness / Website / FAQ -->
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -659,12 +549,9 @@
         "@id":"https://utahwalkintubs.com/#org",
         "name":"Utah Walk In Tubs (Aging Safely Baths Dealer Network)",
         "url":"https://utahwalkintubs.com/",
-        "logo":"https://www.agingsafelybaths.com/wp-content/uploads/2025/12/aging-safely-baths-logo-2.png-2.png",
-        "email":"sales@agingsafelybaths.com",
+        "logo":"https://www.agingsafelybaths.com/wp-content/uploads/2026/03/Aging-Safely-Baths-Logo-320.png",
         "telephone":"+1-888-779-2284",
-        "sameAs":[
-          "https://www.agingsafelybaths.com/"
-        ]
+        "sameAs":["https://www.agingsafelybaths.com/"]
       },
       {
         "@type":"WebSite",
@@ -680,64 +567,34 @@
         "name":"Utah Walk In Tubs",
         "url":"https://utahwalkintubs.com/",
         "telephone":"+1-888-779-2284",
-        "email":"sales@agingsafelybaths.com",
-        "image":[
-          "https://www.agingsafelybaths.com/wp-content/uploads/2023/04/walk-in-tub-image-scaled.jpg",
-          "https://www.agingsafelybaths.com/wp-content/uploads/2023/04/ella-bubbles-walk-in-tubs-image.jpg"
-        ],
-        "areaServed":[
-          {"@type":"State","name":"Utah"}
-        ],
+        "image":["https://www.agingsafelybaths.com/wp-content/uploads/2023/04/walk-in-tub-image-scaled.jpg"],
+        "areaServed":[{"@type":"State","name":"Utah"}],
         "priceRange":"$$$",
-        "publisher":{"@id":"https://utahwalkintubs.com/#org"},
-        "knowsAbout":[
-          "walk in tubs",
-          "hydrotherapy tubs",
-          "fast drain walk in tubs",
-          "outward swing door walk in tubs",
-          "one day bathroom installation",
-          "DIY walk in tub delivery"
-        ]
+        "knowsAbout":["Utah walk in tubs","hydrotherapy tubs","fast drain walk in tubs","one day bathroom installation","DIY walk in tub delivery"]
+      },
+      {
+        "@type":"Service",
+        "name":"Utah Walk In Tub Installation and Guidance",
+        "serviceType":"Walk-in tub installation and guidance",
+        "description":"One-day professional installation and DIY drop-ship for walk in tubs across all 29 Utah counties. Expert sizing guidance from Aging Safely Baths.",
+        "provider":{"@id":"https://utahwalkintubs.com/#org"},
+        "areaServed":{"@type":"State","name":"Utah"},
+        "offers":{"@type":"Offer","description":"Free quote and consultation","price":"0","priceCurrency":"USD"}
       },
       {
         "@type":"FAQPage",
         "@id":"https://utahwalkintubs.com/#faq",
         "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"How do I know if a walk in tub will fit my Utah bathroom?",
-            "acceptedAnswer":{"@type":"Answer","text":"Start with a simple measurement of the existing tub space (length, width, and door clearance). Next, confirm where plumbing lines are located and whether you prefer a left or right drain layout. If you share photos and rough measurements, we can recommend models that fit without forcing a full remodel."}
-          },
-          {
-            "@type":"Question",
-            "name":"What features matter most for comfort and safety without overpaying?",
-            "acceptedAnswer":{"@type":"Answer","text":"Prioritize a comfortable seat height, a wide door opening, slip-resistant flooring, and an easy-to-reach grab bar layout. Then decide if you want hydrotherapy jets, heated surfaces, or a fast-drain system. The right choice is the one that matches how you actually bathe and move today."}
-          },
-          {
-            "@type":"Question",
-            "name":"Is one day installation available in Utah?",
-            "acceptedAnswer":{"@type":"Answer","text":"In many Utah areas we can coordinate fast installation options. If your project needs additional work, we’ll explain the timeline up front. If you prefer to save more, DIY delivery nationwide is also available so your contractor can install on your schedule."}
-          },
-          {
-            "@type":"Question",
-            "name":"What is the difference between inward and outward swing doors?",
-            "acceptedAnswer":{"@type":"Answer","text":"Outward swing doors usually provide a more open entry path and can feel easier for transfers. Inward swing doors can work well in tighter bathrooms. The best option depends on clearance, your mobility needs, and where you want to step in and sit."}
-          },
-          {
-            "@type":"Question",
-            "name":"How long does it take to drain a walk in tub?",
-            "acceptedAnswer":{"@type":"Answer","text":"Drain time depends on plumbing, tub size, and whether the model includes a fast-drain design. If waiting is a concern, focus on models engineered for quicker draining and confirm your home’s drain line setup."}
-          },
-          {
-            "@type":"Question",
-            "name":"Should I choose a walk in tub or a roll in shower?",
-            "acceptedAnswer":{"@type":"Answer","text":"If soaking comfort and hydrotherapy are important, a walk in tub is often the better fit. If wheelchair access and open entry are top priorities, a barrier-free roll in shower may be best. Many Utah homeowners plan for the next 10 years and choose the option that supports how they expect to move over time."}
-          },
-          {
-            "@type":"Question",
-            "name":"Can you help me pick a model if I have arthritis or balance issues?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes. We’ll focus on seat height, hand placement, door opening, and controls that are easy to use. We can also recommend hydrotherapy and comfort options that many people with joint pain find helpful."}
-          }
+          {"@type":"Question","name":"How do I know if a walk in tub will fit my Utah bathroom?","acceptedAnswer":{"@type":"Answer","text":"Measure the existing tub footprint and confirm door clearance. Share photos and rough measurements and we can recommend models that fit without forcing a full remodel."}},
+          {"@type":"Question","name":"Is one day installation available in Utah?","acceptedAnswer":{"@type":"Answer","text":"In many Utah areas we can coordinate fast installation options. DIY delivery is also available if you prefer to use your own contractor."}},
+          {"@type":"Question","name":"What features matter most for comfort without overspending?","acceptedAnswer":{"@type":"Answer","text":"Start with seat comfort, door opening feel, and easy controls. Then decide on drain strategy and hydrotherapy based on your real goal."}},
+          {"@type":"Question","name":"Do you serve all 29 Utah counties?","acceptedAnswer":{"@type":"Answer","text":"Yes. We serve all 29 Utah counties through one-day professional installation and DIY drop-ship delivery. Call 1-888-779-2284 to confirm availability in your area."}}
+        ]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://utahwalkintubs.com/"}
         ]
       }
     ]
@@ -746,585 +603,817 @@
 </head>
 
 <body>
-  <div class="topbar">
-    Utah homeowners: compare <strong>One Day Installation options</strong> or <strong>DIY delivery savings</strong>. Questions now? <a href="tel:18887792284">Tap to call 1-888-779-2284 (BATH)</a>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  Utah homeowners: compare <strong>One Day Installation</strong> or <strong>DIY delivery savings</strong>. Questions now? <a href="tel:18887792284">Tap to call 1-888-779-2284 (BATH)</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="navwrap">
+    <div class="brand">
+      <a href="/" aria-label="Utah Walk In Tubs home">
+        <img
+          src="https://www.agingsafelybaths.com/wp-content/uploads/2026/03/Aging-Safely-Baths-Logo-320.png"
+          alt="Aging Safely Baths — Utah Walk In Tubs"
+          width="320" height="110"
+          loading="eager"
+        />
+      </a>
+    </div>
+
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a href="#choose">Choose the Right Tub</a>
+      <a href="#pricing">Budget &amp; Value</a>
+      <a href="#utah">Utah Coverage</a>
+      <a href="#form">Get a Quote</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="cta-right">
+      <a class="call-pill" href="tel:18887792284">
+        <small>Click to Call</small>
+        <strong>1-888-779-2284 (BATH)</strong>
+      </a>
+      <a class="btn-nav" href="#form">Fast Quote</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
+</header>
 
-  <header class="header">
-    <div class="navwrap" role="navigation" aria-label="Primary navigation">
-      <div class="brand">
-        <a href="/" aria-label="Utah Walk In Tubs home">
-          <img src="https://www.agingsafelybaths.com/wp-content/uploads/2025/12/aging-safely-baths-logo-2.png-2.png" alt="Aging Safely Baths logo" loading="eager">
-        </a>
-      </div>
+<!-- MOBILE DRAWER -->
+<div class="mobile-nav" id="mobileNav" onclick="closeMenuOnOverlay(event)">
+  <div class="mobile-drawer">
+    <div class="drawer-head"><button class="drawer-close" onclick="closeMenu()">✕ Close</button></div>
+    <nav>
+      <a href="#choose" onclick="closeMenu()">Choose the Right Tub</a>
+      <a href="#pricing" onclick="closeMenu()">Budget &amp; Value</a>
+      <a href="#utah" onclick="closeMenu()">Utah Coverage</a>
+      <a href="#form" onclick="closeMenu()">Get a Quote</a>
+      <a href="#faq" onclick="closeMenu()">FAQ</a>
+    </nav>
+    <div class="mobile-cta">
+      <div class="lbl">Call Toll-Free</div>
+      <a href="tel:18887792284">1-888-779-2284 (BATH)</a>
+    </div>
+  </div>
+</div>
 
-      <nav class="navlinks" aria-label="Site links">
-        <a href="#choose">Choose the Right Tub</a>
-        <a href="#pricing">Budget & Value</a>
-        <a href="#form">Get a Quote</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+<!-- HERO STRIP — BIG BOLD -->
+<section class="hero-strip">
+  <div class="hero-strip-inner">
+    <h2>ONE DAY INSTALLATION<br/><span class="accent">AVAILABLE IN YOUR AREA</span></h2>
+    <p class="sub">
+      Or DIY-friendly delivery nationwide — use your own contractor or ask about professional installation options where available.
+      The goal is simple: choose the right tub now, and avoid expensive regret later.
+    </p>
+    <div class="hero-strip-btns">
+      <a class="btn-primary" href="#form">Get My Fast Quote →</a>
+      <a class="btn-outline" href="tel:18887792284">📞 Call 1-888-779-2284 (BATH)</a>
+    </div>
+    <div class="trust-pills">
+      <div class="tpill"><span class="dot"></span>One-day install available</div>
+      <div class="tpill"><span class="dot"></span>DIY delivery nationwide</div>
+      <div class="tpill"><span class="dot"></span>All 29 Utah counties served</div>
+      <div class="tpill"><span class="dot"></span>Aging Safely Baths dealer</div>
+      <div class="tpill"><span class="dot"></span>No-pressure guidance</div>
+    </div>
+  </div>
+</section>
 
-      <div class="ctaRight">
-        <a class="callPill" href="tel:18887792284" aria-label="Click to call 1-888-779-2284">
-          <div>
-            <small>CLICK TO CALL</small>
-            <span>1-888-779-2284 (BATH)</span>
+<!-- ZIP TICKER -->
+<div class="zip-ticker-wrap" aria-label="Utah ZIP codes we serve">
+  <div class="zip-ticker">
+    Utah ZIP codes we serve: &nbsp; 84101 Salt Lake City &nbsp;•&nbsp; 84601 Provo &nbsp;•&nbsp; 84401 Ogden &nbsp;•&nbsp; 84770 St. George &nbsp;•&nbsp; 84321 Logan &nbsp;•&nbsp; 84720 Cedar City &nbsp;•&nbsp; 84003 American Fork &nbsp;•&nbsp; 84003 Alpine &nbsp;•&nbsp; 84010 Bountiful &nbsp;•&nbsp; 84020 Draper &nbsp;•&nbsp; 84025 Farmington &nbsp;•&nbsp; 84041 Layton &nbsp;•&nbsp; 84042 Lindon &nbsp;•&nbsp; 84043 Lehi &nbsp;•&nbsp; 84045 Saratoga Springs &nbsp;•&nbsp; 84047 Midvale &nbsp;•&nbsp; 84054 North Salt Lake &nbsp;•&nbsp; 84057 Orem &nbsp;•&nbsp; 84062 Pleasant Grove &nbsp;•&nbsp; 84065 Riverton &nbsp;•&nbsp; 84070 Sandy &nbsp;•&nbsp; 84075 Syracuse &nbsp;•&nbsp; 84078 Vernal &nbsp;•&nbsp; 84087 Woods Cross &nbsp;•&nbsp; 84088 West Jordan &nbsp;•&nbsp; 84092 Sandy &nbsp;•&nbsp; 84094 Sandy &nbsp;•&nbsp; 84095 South Jordan &nbsp;•&nbsp; 84096 Herriman &nbsp;•&nbsp; 84097 Orem &nbsp;•&nbsp; 84098 Park City &nbsp;•&nbsp; 84101 Salt Lake City &nbsp;•&nbsp; 84103 Salt Lake City &nbsp;•&nbsp; 84104 Salt Lake City &nbsp;•&nbsp; 84105 Salt Lake City &nbsp;•&nbsp; 84106 Salt Lake City &nbsp;•&nbsp; 84107 Murray &nbsp;•&nbsp; 84108 Salt Lake City &nbsp;•&nbsp; 84109 Salt Lake City &nbsp;•&nbsp; 84115 Salt Lake City &nbsp;•&nbsp; 84116 Salt Lake City &nbsp;•&nbsp; 84117 Holladay &nbsp;•&nbsp; 84118 Kearns &nbsp;•&nbsp; 84119 West Valley City &nbsp;•&nbsp; 84120 West Valley City &nbsp;•&nbsp; 84121 Cottonwood Heights &nbsp;•&nbsp; 84123 Taylorsville &nbsp;•&nbsp; 84124 Millcreek &nbsp;•&nbsp; 84128 West Valley &nbsp;•&nbsp; 84401 Ogden &nbsp;•&nbsp; 84403 Ogden &nbsp;•&nbsp; 84404 Ogden &nbsp;•&nbsp; 84405 South Ogden &nbsp;•&nbsp; 84414 North Ogden &nbsp;•&nbsp; 84601 Provo &nbsp;•&nbsp; 84604 Provo &nbsp;•&nbsp; 84606 Provo &nbsp;•&nbsp; 84653 Springville &nbsp;•&nbsp; 84660 Spanish Fork &nbsp;•&nbsp; 84663 Springville &nbsp;•&nbsp; 84664 Mapleton &nbsp;•&nbsp; 84701 Richfield &nbsp;•&nbsp; 84721 Cedar City &nbsp;•&nbsp; 84737 Hurricane &nbsp;•&nbsp; 84738 Ivins &nbsp;•&nbsp; 84745 La Verkin &nbsp;•&nbsp; 84747 Loa &nbsp;•&nbsp; 84757 New Harmony &nbsp;•&nbsp; 84765 Santa Clara &nbsp;•&nbsp; 84770 St. George &nbsp;•&nbsp; 84780 Washington &nbsp;•&nbsp; 84790 St. George &nbsp;•&nbsp;
+    &nbsp;•&nbsp;
+    Utah ZIP codes we serve: &nbsp; 84101 Salt Lake City &nbsp;•&nbsp; 84601 Provo &nbsp;•&nbsp; 84401 Ogden &nbsp;•&nbsp; 84770 St. George &nbsp;•&nbsp; 84321 Logan &nbsp;•&nbsp; 84720 Cedar City &nbsp;•&nbsp; 84003 American Fork &nbsp;•&nbsp; 84003 Alpine &nbsp;•&nbsp; 84010 Bountiful &nbsp;•&nbsp; 84020 Draper &nbsp;•&nbsp; 84025 Farmington &nbsp;•&nbsp; 84041 Layton &nbsp;•&nbsp; 84042 Lindon &nbsp;•&nbsp; 84043 Lehi &nbsp;•&nbsp; 84045 Saratoga Springs &nbsp;•&nbsp; 84047 Midvale &nbsp;•&nbsp; 84057 Orem &nbsp;•&nbsp; 84065 Riverton &nbsp;•&nbsp; 84070 Sandy &nbsp;•&nbsp; 84075 Syracuse &nbsp;•&nbsp; 84088 West Jordan &nbsp;•&nbsp; 84095 South Jordan &nbsp;•&nbsp; 84098 Park City &nbsp;•&nbsp;
+  </div>
+</div>
+
+<main>
+<section class="section">
+
+  <!-- HERO GRID -->
+  <div class="heroGrid">
+    <div class="card heroCard card-pad">
+      <div class="kicker">UtahWalkInTubs.com • Built for seniors, caregivers, and smart homeowners</div>
+      <h1>Utah Walk In Tubs That Fit Your Body, Your Bathroom, and Your Budget</h1>
+      <p class="lead">
+        If you're shopping for a walk in tub in Utah, you're making a decision that affects daily comfort, independence, and peace of mind.
+        So this page is built like a real buyer's guide — not a pushy pitch.
+        You'll learn how to avoid the common mistakes that lead to returns, remodel surprises, and "I wish we chose differently" moments.
+      </p>
+
+      <ul class="bullets">
+        <li><span class="dot"></span>Clear options: one day install paths or DIY savings</li>
+        <li><span class="dot"></span>Comfort-focused sizing so you sit naturally</li>
+        <li><span class="dot"></span>Fast drain guidance so you're not waiting forever</li>
+        <li><span class="dot"></span>Hydrotherapy choices that match your goals</li>
+      </ul>
+
+      <div class="twoCol" style="margin-top:1.25rem;">
+        <div class="callout">
+          <strong>Quick way to start:</strong> take two bathroom measurements and send a photo. Then we'll recommend a short list of tubs that truly fit.
+          <div class="mini">Call <a href="tel:18887792284">1-888-779-2284 (BATH)</a> or email <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.</div>
+        </div>
+        <div class="callout">
+          <strong>Want the bigger picture first?</strong> Use the in-depth guides on Aging Safely Baths, then come back here for Utah-specific options and pricing guidance.
+          <div class="mini">
+            Read: <a href="https://www.agingsafelybaths.com/walk-in-tub-guide/" target="_blank" rel="noopener">Walk In Tub Guide</a> •
+            <a href="https://www.agingsafelybaths.com/roll-in-shower-guide/" target="_blank" rel="noopener">Roll In Shower Guide</a>
           </div>
-        </a>
-        <a class="btn primary" href="#form">Fast Quote</a>
+        </div>
       </div>
     </div>
-  </header>
 
-  <section class="heroStrip">
-    <div class="inner">
-      <p class="big">ONE DAY INSTALLATION AVAILABLE IN YOUR AREA</p>
-      <p class="sub">Or DIY-friendly delivery nationwide — use your own contractor or ask about professional installation options where available. The goal is simple: choose the right tub now, and avoid expensive regret later.</p>
+    <aside class="card mediaCard">
+      <div class="mediaTop">
+        <h2>Not sure what "right fit" means?</h2>
+        <p>Start with door style, seat comfort, and how you plan to transfer. Then we match features to your daily routine.</p>
+      </div>
+      <div class="mediaImage">
+        <img src="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/walk-in-tub-image-scaled.jpg" alt="Installed walk in tub next to a glass shower" loading="lazy" />
+      </div>
+      <div class="mediaImage" style="padding-top:0;">
+        <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/top_view_detailed_diagram5-1.jpg" alt="Walk in tub features diagram top view" loading="lazy" />
+      </div>
+    </aside>
+  </div>
+
+  <!-- FEATURE CARDS -->
+  <div class="feat-grid" style="margin-top:1.5rem;">
+    <div class="feat-card blue">
+      <div class="feat-icon">🛁</div>
+      <h3>Easy Entry</h3>
+      <p>Low-threshold door with outward or inward swing options. We help you choose what feels natural for your transfer style.</p>
+    </div>
+    <div class="feat-card teal">
+      <div class="feat-icon">💧</div>
+      <h3>Hydrotherapy</h3>
+      <p>Air jets, water jets, or both. We match the system to your goals — not to the highest price point.</p>
+    </div>
+    <div class="feat-card gold">
+      <div class="feat-icon">⚡</div>
+      <h3>Fast Drain</h3>
+      <p>If waiting bothers you, plan for it now. Fast-drain models and your home's plumbing setup both matter.</p>
+    </div>
+  </div>
+
+  <!-- BUYER STORY -->
+  <div class="contentGrid" id="choose">
+    <div class="card card-pad">
+      <h2 class="section-h2">A Utah Buyer's Story: Why People Regret the "Good Deal" Tub</h2>
+      <p class="bigText">
+        In Utah, a lot of homeowners are practical. They compare options, they look for value, and they want a solution that lasts.
+        That mindset is good — until the tub is chosen based on the wrong criteria.
+      </p>
+      <p class="bigText">
+        The most common regret we hear is not about price. It's about fit and daily usability.
+        A tub can be "high quality" and still feel wrong if the seat is too low, the door opening is awkward, or the controls are uncomfortable to reach.
+        And once the tub is in, many families realize they're stuck living with a compromise.
+      </p>
+      <p class="bigText">
+        That's why this page is built around one idea: <strong>choose the tub that matches your body and your bathroom first.</strong>
+        Then we layer on comfort upgrades like hydrotherapy, heated surfaces, and fast-drain designs.
+        You end up with a tub you actually enjoy using.
+      </p>
+
+      <div class="imgRow">
+        <figure class="imgTile">
+          <img src="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/ella-bubbles-walk-in-tubs-image.jpg" alt="Modern acrylic walk in tub" loading="lazy" />
+          <figcaption>Comfort and clean lines. A modern tub should feel calm and easy to use.</figcaption>
+        </figure>
+        <figure class="imgTile">
+          <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/09/front-entry-4.jpg" alt="Front entry walk in tub door example" loading="lazy" />
+          <figcaption>Door design influences entry comfort. We help you choose what feels natural.</figcaption>
+        </figure>
+        <figure class="imgTile">
+          <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/dual_drain2.jpg" alt="Diagram showing dual drain system for faster drain times" loading="lazy" />
+          <figcaption>Drain strategy matters. If waiting bothers you, plan for it upfront.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="card card-pad">
+      <h2 class="section-h2" id="utah">Utah Coverage: Counties We Serve &amp; How We Handle Installs</h2>
+      <p class="bigText">
+        We serve homeowners and caregivers across the entire state of Utah — all 29 counties.
+        That includes large metro areas like Salt Lake City, Provo, and Ogden, as well as smaller communities in rural and mountain regions.
+        We also support DIY delivery nationwide if you prefer to use your own contractor.
+      </p>
+      <p class="bigText">
+        <strong>Primary metro coverage:</strong> Salt Lake County, Utah County, Davis County, Weber County, Washington County, Cache County, Iron County, Tooele County, Summit County, and Box Elder County.
+        If you're in any other county, no problem — the process is still the same.
+      </p>
+      <p class="bigText">
+        For many Utah homeowners, the best approach is a "two-track plan."
+        First, request a fast quote and a recommended model list.
+        Then decide whether you want coordinated professional installation or a DIY savings path.
+        Either way, you avoid choosing a tub before you know what actually fits.
+      </p>
+
+      <div class="callout">
+        <strong>Helpful Utah resources (non-competitive):</strong>
+        <div class="mini">
+          Utah Aging services: <a href="https://daas.utah.gov/" target="_blank" rel="noopener">Division of Aging &amp; Adult Services</a><br />
+          Utah fall prevention + home safety: <a href="https://ucoa.utah.edu/fpa/home-safety.php" target="_blank" rel="noopener">Utah Commission on Aging – Home Safety</a><br />
+          Find your local support region: <a href="https://ucoa.utah.edu/area-agencies-on-aging.php" target="_blank" rel="noopener">Area Agencies on Aging (Utah)</a><br />
+          Manufacturer background: <a href="https://ellasbubbles.com/about/" target="_blank" rel="noopener">Ella's Bubbles – About</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALL UTAH COUNTIES -->
+  <div style="margin-top:1.5rem;">
+    <div class="counties-section">
+      <div class="section-label">Statewide Service</div>
+      <h2 class="section-h2">All 29 Utah Counties — We Serve Every One</h2>
+      <p class="bigText">
+        Professional one-day installation is available throughout the Wasatch Front and major metro areas.
+        Drop-ship delivery is available to every Utah county and every address statewide.
+        Call <a href="tel:18887792284"><strong>1-888-779-2284 (BATH)</strong></a> to confirm same-day scheduling in your area.
+      </p>
+      <div class="county-grid">
+        <div class="county-chip hot">Salt Lake</div>
+        <div class="county-chip hot">Utah</div>
+        <div class="county-chip hot">Davis</div>
+        <div class="county-chip hot">Weber</div>
+        <div class="county-chip hot">Washington</div>
+        <div class="county-chip hot">Cache</div>
+        <div class="county-chip hot">Iron</div>
+        <div class="county-chip hot">Tooele</div>
+        <div class="county-chip hot">Summit</div>
+        <div class="county-chip hot">Box Elder</div>
+        <div class="county-chip">Uintah</div>
+        <div class="county-chip">Sanpete</div>
+        <div class="county-chip">Sevier</div>
+        <div class="county-chip">Emery</div>
+        <div class="county-chip">Carbon</div>
+        <div class="county-chip">Millard</div>
+        <div class="county-chip">Juab</div>
+        <div class="county-chip">Wasatch</div>
+        <div class="county-chip">Grand</div>
+        <div class="county-chip">Morgan</div>
+        <div class="county-chip">Duchesne</div>
+        <div class="county-chip">Kane</div>
+        <div class="county-chip">Garfield</div>
+        <div class="county-chip">San Juan</div>
+        <div class="county-chip">Wayne</div>
+        <div class="county-chip">Rich</div>
+        <div class="county-chip">Piute</div>
+        <div class="county-chip">Beaver</div>
+        <div class="county-chip">Daggett</div>
+      </div>
+      <p style="margin-top:0.85rem; font-size:0.82rem; color:var(--muted);">
+        Highlighted = densest same-day installation coverage. All 29 counties served via drop-ship. <a href="tel:18887792284">Call to confirm your area →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- 5 DECISIONS -->
+  <div class="twoCol" style="margin-top:1.5rem;">
+    <div class="card card-pad">
+      <h2 class="section-h2">The 5 Decisions That Make or Break Your Purchase</h2>
+      <p class="bigText">
+        If you want a walk in tub you'll still like years from now, you need to make a few decisions in the right order.
+        Otherwise, you end up chasing fixes after the tub arrives.
+        So here's the practical order that works.
+      </p>
+      <p class="bigText"><strong>1) Bathroom fit and door clearance.</strong> Measure the existing tub footprint and confirm the clear path where you step in and sit. This prevents the "it technically fits, but it feels tight" problem.</p>
+      <p class="bigText"><strong>2) Seat comfort and entry style.</strong> Seat height, back angle, and door type are the difference between "I can use it" and "I enjoy it."</p>
+      <p class="bigText"><strong>3) Drain expectations.</strong> Some people are fine with typical drain times. Others are not. If waiting will frustrate you, plan for faster-drain models and confirm your home plumbing setup.</p>
+      <p class="bigText"><strong>4) Hydrotherapy based on your real goal.</strong> Some buyers want deep soaking comfort. Others want targeted jets. If you choose hydrotherapy, you should know what you're paying for.</p>
+      <p class="bigText"><strong>5) Installation path: fast install or DIY savings.</strong> Utah homeowners often appreciate the flexibility. We can guide either path, and you decide what makes sense.</p>
+
+      <div class="callout" style="margin-top:1rem;">
+        <strong>Want a curated list of models?</strong>
+        <div class="mini">
+          Explore tubs: <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">All Walk In Tubs</a> •
+          Hydrotherapy: <a href="https://www.agingsafelybaths.com/hydrotherapy-bathtub/" target="_blank" rel="noopener">Hydrotherapy Bathtub</a> •
+          Therapeutic overview: <a href="https://www.agingsafelybaths.com/therapeutic-benefits/" target="_blank" rel="noopener">Therapeutic Benefits</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-pad" id="pricing">
+      <h2 class="section-h2">Budget, Value, and How to Avoid Overpaying</h2>
+      <p class="bigText">
+        It's normal to worry about price. Still, the bigger risk is paying for the wrong features.
+        That's how buyers end up with a tub that looks impressive but feels inconvenient.
+        So we frame "budget" as a value decision: pay for the things you will use every week.
+      </p>
+      <p class="bigText">
+        If your main goal is safer bathing and easier entry, prioritize comfortable seating and door access.
+        If your main goal is soothing relief after a long day, then hydrotherapy may be worth it.
+        And if your main goal is future mobility planning, we should also discuss whether a roll in shower is a better long-term fit.
+      </p>
+      <p class="bigText">
+        For homeowners comparing options, it can help to think in "regret prevention."
+        A tub that is $1,000 cheaper can still cost more in frustration, poor fit, or rework.
+        On the other hand, the best purchases feel simple.
+        They fit. They drain reasonably. They are easy to sit in and stand up from.
+      </p>
+
+      <div class="chartCard">
+        <h4>Feature Priority (Typical Utah Homeowner)</h4>
+        <div class="bars" id="barChart">
+          <div class="barRow"><div class="barLabel">Comfortable seat + entry</div><div class="bar"><span data-w="92"></span></div><div class="barNum">High</div></div>
+          <div class="barRow"><div class="barLabel">Drain strategy</div><div class="bar"><span data-w="78"></span></div><div class="barNum">High</div></div>
+          <div class="barRow"><div class="barLabel">Hydrotherapy jets</div><div class="bar"><span data-w="62"></span></div><div class="barNum">Med</div></div>
+          <div class="barRow"><div class="barLabel">Heated surfaces</div><div class="bar"><span data-w="48"></span></div><div class="barNum">Med</div></div>
+          <div class="barRow"><div class="barLabel">Extra luxury upgrades</div><div class="bar"><span data-w="30"></span></div><div class="barNum">Low</div></div>
+        </div>
+        <p class="help">Not a promise of outcomes — a practical way to prioritize what most buyers actually use.</p>
+      </div>
+
+      <div class="callout" style="margin-top:1rem;">
+        <strong>If wheelchair access is part of the plan:</strong>
+        <div class="mini">
+          See roll-in options: <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank" rel="noopener">Handicap Showers</a> •
+          Shop barrier-free kits: <a href="https://showers4less.com/" target="_blank" rel="noopener">Showers4Less.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZING CHECKLIST -->
+  <div class="card card-pad" style="margin-top:1.25rem;">
+    <h2 class="section-h2">A Simple Utah Sizing Checklist That Prevents Expensive Mistakes</h2>
+    <p class="bigText">
+      Utah homes vary.
+      You'll see classic single-family bathrooms, mountain cabins with tight layouts, and remodel-ready spaces in newer builds.
+      Because of that, the best "first step" is not picking a brand.
+      It's verifying fit and daily movement.
+    </p>
+    <p class="bigText">
+      Here is the checklist we recommend for nearly every Utah buyer:
+      confirm the tub footprint, confirm where the door will open, confirm you can step in and sit without twisting, confirm where the drain line is located, and confirm your water heater capacity if you want a larger soaking tub.
+      Then decide on upgrades like hydrotherapy and heated surfaces.
+      Finally, choose your install path.
+    </p>
+    <p class="bigText">
+      When you follow this order, your decision feels calm.
+      You're not guessing.
+      You're not relying on one picture online.
+      And you're not hoping the installer "figures it out."
+      Instead, you buy the tub that matches your home and your needs.
+    </p>
+
+    <div class="imgRow">
+      <figure class="imgTile">
+        <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/09/3055-002_0.jpeg" alt="Digital controls for a walk in tub" loading="lazy" />
+        <figcaption>Controls should be easy to reach and simple to understand.</figcaption>
+      </figure>
+      <figure class="imgTile">
+        <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/08/4-deluxe-massage-LH-1000.jpg" alt="Hydrotherapy jets and drain inside a walk in tub" loading="lazy" />
+        <figcaption>Hydrotherapy can be a comfort upgrade when it matches your goal.</figcaption>
+      </figure>
+      <figure class="imgTile">
+        <img src="https://www.agingsafelybaths.com/wp-content/uploads/2023/03/walk-in-tub-cost-image.jpg" alt="Walk in tub being tested with water for leaks and jet test" loading="lazy" />
+        <figcaption>Testing matters. Ask about inspection, jet testing, and quality checks.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- MANUFACTURER + ROLL IN SHOWER -->
+  <div class="twoCol" style="margin-top:1.25rem;">
+    <div class="card card-pad">
+      <h2 class="section-h2">Made and Supported by Real Manufacturing</h2>
+      <p class="bigText">
+        Many buyers in Utah start by searching online and quickly run into dozens of brands that look the same.
+        That's when it helps to anchor your decision in something real: where the tub is made, how the company supports it, and whether the models are engineered for the features you care about.
+      </p>
+      <p class="bigText">
+        We are an Ella's Bubbles dealer network.
+        They are known for acrylic walk in tubs and accessible bathing products.
+        Their manufacturer information is publicly available, and that matters because you can verify what you're buying.
+        If you prefer to start with that background, use the manufacturer page and then we'll guide you to a model that fits your bathroom and budget.
+      </p>
+      <p class="bigText">
+        Learn more here: <a href="https://ellasbubbles.com/about/" target="_blank" rel="noopener">Ella's Bubbles – About</a>.
+        Then, if you want to browse tubs and compare layouts, use the main gateway at
+        <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">AgingSafelyBaths.com/walk-in-tubs</a>.
+      </p>
+    </div>
+
+    <div class="card card-pad">
+      <h2 class="section-h2">When a Roll In Shower Is the Smarter Move</h2>
+      <p class="bigText">
+        Some Utah families start with a walk in tub and later realize that a barrier-free shower would have fit their long-term plan better.
+        That's why we bring it up early.
+        Not to distract you, but to help you choose correctly the first time.
+      </p>
+      <p class="bigText">
+        If you need a wide open entry, wheelchair turning space, or a truly step-free transition, then you should also compare roll in shower systems.
+        In many bathrooms, a barrier-free shower creates the simplest daily routine.
+        However, if soaking and hydrotherapy comfort are important, a walk in tub may be the better fit.
+        We'll help you weigh the decision based on how you move today and what you expect over time.
+      </p>
+      <p class="bigText">
+        Helpful pages to compare:
+        <a href="https://www.agingsafelybaths.com/roll-in-shower-guide/" target="_blank" rel="noopener">Roll In Shower Guide</a>,
+        <a href="https://showers4less.com/pages/utah-roll-in-showers-and-ada-shower-kits" target="_blank" rel="noopener">Showers4Less Utah roll in showers</a>.
+      </p>
+
+      <div class="callout" style="margin-top:1rem;">
+        <strong>Good decision-making feels calm.</strong>
+        <div class="mini">
+          If you're unsure, call us. We'll help you pick the option that supports independence and comfort without forcing a complicated remodel.
+          Call <a href="tel:18887792284">1-888-779-2284 (BATH)</a> or email <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW SEO COPY SECTION -->
+  <div class="card card-pad" style="margin-top:1.5rem; background: linear-gradient(160deg,#eef8fb,#fff);">
+    <div class="section-label">Utah Walk In Tub Information</div>
+    <h2 class="section-h2">What Utah Homeowners Should Know Before Buying a Walk In Tub</h2>
+    <p class="bigText">
+      Utah is a state where aging in place has become increasingly important. According to the
+      <a href="https://daas.utah.gov/" target="_blank" rel="noopener">Utah Division of Aging &amp; Adult Services</a>,
+      the 65-and-older population is one of the fastest-growing segments in the state. As a result, more families are investing in accessible home modifications — and a walk in tub is one of the most impactful upgrades available.
+    </p>
+    <p class="bigText">
+      However, not all walk in tubs are created equal. Furthermore, the Utah housing stock varies widely — from older ranch homes in Salt Lake County to newer construction in fast-growing Utah County cities like Lehi, Saratoga Springs, and Eagle Mountain. Because of that, what works perfectly in one bathroom may be the wrong fit for another. Therefore, our approach focuses on fit first, features second.
+    </p>
+
+    <div class="twoCol" style="margin-top:1rem;">
+      <div>
+        <h3 class="card-h3">Walk In Tubs and Utah's Hard Water</h3>
+        <p class="bigText">
+          Utah is well known for having some of the hardest water in the United States. In fact, the Salt Lake Valley and Utah County regularly rank among the hardest-water regions nationally.
+          This matters for walk in tub ownership because hard water accelerates mineral buildup on jets, drains, and acrylic surfaces.
+          Consequently, when choosing a model for a Utah home, it is worth asking about jet design that minimizes clogging risk and surface materials that resist mineral deposits.
+          In addition, some homeowners pair their tub with an inline water softener or descaling solution to extend the life of hydrotherapy systems.
+        </p>
+        <p class="bigText">
+          We factor these considerations into our Utah-specific product recommendations. As a result, the models we suggest for Utah buyers are often different from what we would recommend in a soft-water market.
+        </p>
+
+        <h3 class="card-h3" style="margin-top:1.25rem;">One-Day Installation: What It Actually Means</h3>
+        <p class="bigText">
+          "One-day installation" is a term used loosely by some companies. For us, it means exactly what it says: our factory-certified installers arrive in the morning, remove your existing tub, prepare the space, install the new walk in tub, connect all plumbing, test every feature, and complete a full cleanup — all in a single visit.
+          Most standard Utah bathroom configurations (a 60-inch alcove replacing an existing tub) qualify easily.
+          Notably, this timeline does not require you to vacate your home or live without a functional bathroom for multiple days.
+        </p>
+        <p class="bigText">
+          If your project involves unusual plumbing configurations, floor reinforcement, or additional electrical work, we will tell you up front. There are no surprises after the truck arrives.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="card-h3">DIY Drop-Ship: A Smart Option for Utah Homeowners With Contractors</h3>
+        <p class="bigText">
+          Many Utah homeowners already have a trusted plumber, remodeler, or handyman they rely on for home projects.
+          Our DIY drop-ship program is designed for exactly this situation. We ship your chosen tub directly to your home or your contractor's location. Your installer does the work. We handle product guidance, sizing, spec sheets, and any questions that come up during installation.
+          The full product warranty still applies, and you benefit from the same white glove selection process we provide to every customer.
+        </p>
+        <p class="bigText">
+          This option is particularly popular in rural Utah counties where scheduling a factory installation team may take longer.
+          In those cases, drop-ship allows the project to move on your timeline rather than ours.
+        </p>
+
+        <h3 class="card-h3" style="margin-top:1.25rem;">VA Benefits and Accessibility Grants</h3>
+        <p class="bigText">
+          Utah has a large and growing veteran population, particularly in communities like Ogden, St. George, and the Salt Lake metro area.
+          Veterans with service-connected disabilities may qualify for the
+          <a href="https://www.agingsafelybaths.com/va-hisa-grant-for-bathroom-modifications/" target="_blank" rel="noopener"><strong>VA HISA Grant for Bathroom Modifications</strong></a>,
+          which can cover a portion of an accessible bathing upgrade including walk in tubs.
+          We have helped numerous Utah veterans navigate this process and can provide the documentation your VA representative needs.
+        </p>
+        <p class="bigText">
+          In addition, Utah seniors who do not qualify for VA benefits may find resources through the
+          <a href="https://ucoa.utah.edu/area-agencies-on-aging.php" target="_blank" rel="noopener">Utah Area Agencies on Aging</a>,
+          which can connect homeowners with local home modification assistance programs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUOTE FORM -->
+  <section class="section" id="form" style="padding-top:0.5rem;">
+    <div class="twoCol">
+      <div class="card card-pad">
+        <h2 class="section-h2">Get a Fast Quote and a Recommended Model List</h2>
+        <p class="bigText">
+          If you tell us your zip code, a couple measurements, and what matters most — comfort, drain speed, hydrotherapy, or transfer ease — we can narrow the options quickly.
+          Then you can compare models without feeling overwhelmed.
+        </p>
+        <p class="bigText">
+          Many Utah homeowners like to start with a clear short list.
+          It saves time.
+          It also prevents the "too many tabs open" problem where every tub looks similar.
+        </p>
+        <p class="bigText">
+          You can also browse specific product examples on the main site:
+          <a href="https://www.agingsafelybaths.com/product/low-profile-walk-in-tub/" target="_blank" rel="noopener">low profile tub with a door</a>,
+          <a href="https://www.agingsafelybaths.com/product/bariatric-walk-in-tub/" target="_blank" rel="noopener">bariatric 35 x 55</a>,
+          or a <a href="https://www.agingsafelybaths.com/product/wheelchair-accessible-bathtub/" target="_blank" rel="noopener">wheelchair transfer style tub</a>.
+          However, the fastest path is still: send your details, and we recommend the right fit first.
+        </p>
+
+        <div class="callout">
+          <strong>DIY savings option:</strong> We can ship and coordinate delivery so your contractor installs on your schedule.
+          <div class="mini">This is a popular choice for homeowners who already have a trusted installer.</div>
+        </div>
+      </div>
+
+      <div class="formCard">
+        <div class="formHeader">
+          <div class="topline">
+            <div class="badge">Fast Quote • Utah Coverage</div>
+            <a class="btn-nav" href="tel:18887792284">Call Now</a>
+          </div>
+          <h3>Request Your Utah Walk In Tub Quote</h3>
+          <p>Simple form. No gimmicks. We'll respond with recommended options and a clear next step.</p>
+        </div>
+
+        <form id="quoteForm" class="formBody" novalidate>
+          <input type="hidden" name="source_site" value="utahwalkintubs.com" />
+
+          <div class="grid2">
+            <div>
+              <label for="user_name">Full Name *</label>
+              <input class="field" id="user_name" name="user_name" type="text" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div>
+              <label for="user_phone">Phone Number *</label>
+              <input class="field" id="user_phone" name="user_phone" type="tel" placeholder="Best number to reach you" required autocomplete="tel" />
+              <p class="help">We can call or text — whichever you prefer.</p>
+            </div>
+          </div>
+
+          <div class="grid2" style="margin-top:0.85rem;">
+            <div>
+              <label for="user_zip">ZIP Code *</label>
+              <input class="field" id="user_zip" name="user_zip" type="text" inputmode="numeric" placeholder="Utah ZIP code" required autocomplete="postal-code" />
+            </div>
+            <div>
+              <label for="user_email">Email (optional)</label>
+              <input class="field" id="user_email" name="user_email" type="email" placeholder="Email for quote details" autocomplete="email" />
+            </div>
+          </div>
+
+          <div style="margin-top:0.85rem;">
+            <label for="user_message">What are you looking for? (optional)</label>
+            <textarea class="field" id="user_message" name="user_message" placeholder="Example: outward swing door, fast drain, hydrotherapy, transfer-friendly seat, bathroom size concerns, timeline..."></textarea>
+          </div>
+
+          <div class="formFooter">
+            <div class="trustRow">
+              <div class="trustPill">
+                <span class="dot"></span>
+                Clear options
+                <span>One day install paths or DIY delivery savings.</span>
+              </div>
+              <div class="trustPill">
+                <span class="dot"></span>
+                Fit-first guidance
+                <span>We recommend models that match your bathroom layout.</span>
+              </div>
+            </div>
+
+            <div class="submitRow">
+              <button class="submitBtn" type="submit">Get My Fast Quote →</button>
+              <div id="formStatus" role="status" aria-live="polite"></div>
+            </div>
+            <p class="smallNote" style="margin-top:0.75rem;">
+              Prefer email? Write us at <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.
+              If you need help now, call <a href="tel:18887792284">1-888-779-2284 (BATH)</a>.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card card-pad" style="margin-top:1.25rem;" id="faq">
+      <div class="section-label">Frequently Asked Questions</div>
+      <h2 class="section-h2">FAQ: Utah Walk In Tubs</h2>
+      <p class="bigText">
+        These are the questions we hear most from Utah homeowners and adult children helping parents.
+        If you want a personalized answer, call <a href="tel:18887792284">1-888-779-2284 (BATH)</a>.
+      </p>
+
+      <div class="faqWrap two-col">
+        <details>
+          <summary>How do I know if a walk in tub will fit my Utah bathroom?</summary>
+          <p>Measure the existing tub footprint and confirm door clearance in the area where you step in and sit. Confirm drain placement and whether your home needs any minor plumbing adjustments. If you share photos and rough measurements, we can recommend models that fit without forcing a full remodel.</p>
+        </details>
+        <details>
+          <summary>What features matter most for comfort without overspending?</summary>
+          <p>Start with seat comfort, door opening feel, and easy controls. Then decide on drain strategy and hydrotherapy based on your real goal. The right tub is the one you will use comfortably every week — not the one with the most features on the spec sheet.</p>
+        </details>
+        <details>
+          <summary>Is one-day installation available in Utah?</summary>
+          <p>In many areas, fast installation options can be coordinated. If your bathroom needs additional work, we'll explain the timeline up front. DIY delivery is also available if you want maximum savings and flexibility — we ship to all 29 Utah counties.</p>
+        </details>
+        <details>
+          <summary>Do outward swing doors work better than inward swing?</summary>
+          <p>Many buyers prefer outward swing because entry can feel more open. However, the best door choice depends on bathroom clearance and how you transfer and sit. We help you pick what fits your space and movement style — not what looks best in a brochure.</p>
+        </details>
+        <details>
+          <summary>How long does it take to drain a walk in tub?</summary>
+          <p>Drain time depends on tub size, plumbing, and model design. If waiting will bother you, focus on models engineered for quicker draining and confirm your home's drain line setup. This is one of the most important questions to answer before purchase.</p>
+        </details>
+        <details>
+          <summary>Should I consider a roll in shower instead of a walk in tub?</summary>
+          <p>If wheelchair access and step-free entry are top priorities, a barrier-free shower may be best. If soaking comfort and hydrotherapy are important, a walk in tub may be the better fit. We can help you compare both so you choose correctly the first time.</p>
+        </details>
+        <details>
+          <summary>Can you help if I have arthritis or balance issues?</summary>
+          <p>Yes. We'll focus on seat height, hand placement, door opening, and controls that are easy to use. We can also recommend hydrotherapy and comfort features that many people with joint conditions find helpful day to day.</p>
+        </details>
+        <details>
+          <summary>Does hard water in Utah affect walk in tubs?</summary>
+          <p>Yes — Utah's exceptionally hard water can accelerate mineral buildup in jet systems and on acrylic surfaces. We factor this into our recommendations and can advise on maintenance practices that extend the life of your tub's hydrotherapy system.</p>
+        </details>
+        <details>
+          <summary>Can veterans get help paying for a walk in tub?</summary>
+          <p>Yes. Utah veterans with service-connected disabilities may qualify for the VA HISA Grant for Bathroom Modifications. We have experience helping Veterans navigate this process and can provide the documentation your VA representative needs.</p>
+        </details>
+        <details>
+          <summary>What is the difference between air jets and water jets?</summary>
+          <p>Air jets push thousands of tiny bubbles through the water for a gentle, full-body effervescent effect. Water jets push pressurized streams at specific areas for a more targeted, massage-like sensation. Many models offer both. We help you choose based on your comfort goals.</p>
+        </details>
+        <details>
+          <summary>How does the DIY drop-ship option work?</summary>
+          <p>We ship your chosen tub directly to your home or your contractor's location. Your installer does the work. We provide spec sheets, sizing guidance, and are available for technical questions during installation. The full product warranty still applies.</p>
+        </details>
+        <details>
+          <summary>Will a walk in tub affect my home's resale value?</summary>
+          <p>A well-installed walk in tub in a Utah home can appeal to buyers who value accessibility. Many buyers appreciate updated bathrooms with aging-in-place features. While no specific value increase is guaranteed, a properly done installation rarely hurts resale.</p>
+        </details>
+        <details>
+          <summary>What products are specific to Utah homes with smaller bathrooms?</summary>
+          <p>There are compact models with front-entry doors and narrow footprints designed for tight spaces. Some Utah mountain homes and older Salt Lake bungalows benefit from these. During a consultation, we review your measurements and suggest options that fit cleanly.</p>
+        </details>
+        <details>
+          <summary>Can I still take quick showers with a walk in tub?</summary>
+          <p>Yes, with a tub-shower combination model. You can use the shower function on busy mornings without filling the tub. On days when you want the full hydrotherapy soak, you fill the tub and enjoy the jets. It is the best of both approaches.</p>
+        </details>
+        <details>
+          <summary>How do I get started today?</summary>
+          <p>The easiest path is to fill out the quote form on this page or call us at 1-888-779-2284 (BATH). We will ask a few simple questions about your bathroom and your goals, then follow up with a short list of recommended models and Utah-specific pricing. No obligation. No pressure.</p>
+        </details>
+      </div>
+    </div>
+
+    <!-- ACCESSIBILITY STATEMENT -->
+    <div class="card card-pad" style="margin-top:1.25rem;">
+      <h2 class="section-h2">Accessibility Statement</h2>
+      <p class="bigText">
+        UtahWalkInTubs.com is designed to be readable and usable for seniors, caregivers, and visitors using assistive technologies.
+        If you experience any difficulty viewing content, navigating the site, or using the quote form, please email
+        <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.
+        You can also call <a href="tel:18887792284">1-888-779-2284 (BATH)</a> for assistance.
+      </p>
     </div>
   </section>
 
-  <main>
-    <section class="section">
-      <div class="heroGrid">
-        <div class="card heroCard">
-          <div class="kicker">UtahWalkInTubs.com • Built for seniors, caregivers, and smart homeowners</div>
-          <h1>Utah Walk In Tubs That Fit Your Body, Your Bathroom, and Your Budget</h1>
-          <p class="lead">
-            If you’re shopping for a walk in tub in Utah, you’re making a decision that affects daily comfort, independence, and peace of mind.
-            So this page is built like a real buyer’s guide—not a pushy pitch.
-            You’ll learn how to avoid the common mistakes that lead to returns, remodel surprises, and “I wish we chose differently” moments.
-          </p>
+</section>
+</main>
 
-          <ul class="bullets" aria-label="Key benefits">
-            <li><span class="dot" aria-hidden="true"></span>Clear options: one day install paths or DIY savings</li>
-            <li><span class="dot" aria-hidden="true"></span>Comfort-focused sizing so you sit naturally</li>
-            <li><span class="dot" aria-hidden="true"></span>Fast drain guidance so you’re not waiting forever</li>
-            <li><span class="dot" aria-hidden="true"></span>Hydrotherapy choices that match your goals</li>
-          </ul>
-
-          <div class="twoCol" style="margin-top:18px;">
-            <div class="callout">
-              <strong>Quick way to start:</strong> take two bathroom measurements and send a photo. Then we’ll recommend a short list of tubs that truly fit.
-              <div class="mini">Call <a href="tel:18887792284">1-888-779-2284 (BATH)</a> or email <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.</div>
-            </div>
-            <div class="callout">
-              <strong>Want the bigger picture first?</strong> Use the in-depth guides on Aging Safely Baths, then come back here for Utah-specific options and pricing guidance.
-              <div class="mini">
-                Read: <a href="https://www.agingsafelybaths.com/walk-in-tub-guide/" target="_blank" rel="noopener">Walk In Tub Guide</a> •
-                <a href="https://www.agingsafelybaths.com/roll-in-shower-guide/" target="_blank" rel="noopener">Roll In Shower Guide</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="card mediaCard" aria-label="Utah walk in tub visuals">
-          <div class="mediaTop">
-            <h2>Not sure what “right fit” means?</h2>
-            <p>Start with door style, seat comfort, and how you plan to transfer. Then we match features to your daily routine.</p>
-          </div>
-          <div class="mediaImage">
-            <img src="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/walk-in-tub-image-scaled.jpg" alt="Installed walk in tub next to a glass shower" loading="lazy">
-          </div>
-          <div class="mediaImage" style="padding-top:0;">
-            <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/top_view_detailed_diagram5-1.jpg" alt="Walk in tub features diagram top view" loading="lazy">
-          </div>
-        </aside>
+<!-- FOOTER -->
+<footer>
+  <div class="footerInner">
+    <div>
+      <div class="foot-logo-wrap">
+        <img
+          src="https://www.agingsafelybaths.com/wp-content/uploads/2026/03/Aging-Safely-Baths-Logo-320.png"
+          alt="Aging Safely Baths"
+          height="52" loading="lazy"
+        />
       </div>
+      <p class="footTitle">UtahWalkInTubs.com</p>
+      <p class="footText">A Utah-focused informational and quote site connected to the Aging Safely Baths dealer network. Explore detailed guides on the main site, then request a fast quote here when you're ready.</p>
+      <p class="footText" style="margin-top:0.65rem;">
+        <a href="https://www.agingsafelybaths.com/walk-in-tub-guide/" target="_blank" rel="noopener">Walk-In Tub Buyer's Guide</a> •
+        <a href="https://www.agingsafelybaths.com/roll-in-shower-guide/" target="_blank" rel="noopener">Roll-In Shower Guide</a> •
+        <a href="https://www.agingsafelybaths.com/va-hisa-grant-for-bathroom-modifications/" target="_blank" rel="noopener">VA HISA Grant Guide</a>
+      </p>
+      <p class="footText" style="margin-top:0.45rem;">
+        <a href="https://showers4less.com/" target="_blank" rel="noopener">Showers4Less.com</a> •
+        <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">Shop All Walk-In Tubs</a> •
+        <a href="https://www.agingsafelybaths.com/white-glove-installation/" target="_blank" rel="noopener">White Glove Installation</a>
+      </p>
+    </div>
 
-      <div class="contentGrid">
-        <div class="card" style="padding:22px;">
-          <p class="bigTitle" id="choose">A Utah Buyer’s Story: Why People Regret the “Good Deal” Tub</p>
-          <p class="bigText">
-            In Utah, a lot of homeowners are practical.
-            They compare options, they look for value, and they want a solution that lasts.
-            That mindset is good—until the tub is chosen based on the wrong criteria.
-          </p>
-          <p class="bigText">
-            The most common regret we hear is not about price.
-            It’s about fit and daily usability.
-            A tub can be “high quality” and still feel wrong if the seat is too low, the door opening is awkward, or the controls are uncomfortable to reach.
-            And once the tub is in, many families realize they’re stuck living with a compromise.
-          </p>
-          <p class="bigText">
-            That’s why this page is built around one idea: <strong>choose the tub that matches your body and your bathroom first</strong>.
-            Then we layer on comfort upgrades like hydrotherapy, heated surfaces, and fast-drain designs.
-            You end up with a tub you actually enjoy using.
-          </p>
-
-          <div class="imgRow" aria-label="Utah walk in tub image variety">
-            <figure class="imgTile">
-              <img src="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/ella-bubbles-walk-in-tubs-image.jpg" alt="Modern acrylic walk in tub" loading="lazy">
-              <figcaption>Comfort and clean lines. A modern tub should feel calm and easy to use.</figcaption>
-            </figure>
-            <figure class="imgTile">
-              <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/09/front-entry-4.jpg" alt="Front entry walk in tub door example" loading="lazy">
-              <figcaption>Door design influences entry comfort. We help you choose what feels natural.</figcaption>
-            </figure>
-            <figure class="imgTile">
-              <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/dual_drain2.jpg" alt="Diagram showing dual drain system for faster drain times" loading="lazy">
-              <figcaption>Drain strategy matters. If waiting bothers you, plan for it upfront.</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="card" style="padding:22px;">
-          <p class="bigTitle">Utah coverage: counties we serve and how we handle installs</p>
-          <p class="bigText">
-            We serve homeowners and caregivers across the entire state of Utah.
-            That includes large metro areas and smaller communities.
-            We also support DIY delivery nationwide if you prefer to use your own contractor.
-          </p>
-          <p class="bigText">
-            <strong>Common counties we support:</strong> Salt Lake County, Utah County, Davis County, Weber County, Washington County, Cache County, Iron County, Tooele County, Summit County, and Box Elder County.
-            If you’re outside those areas, that’s fine.
-            The right process is still the same: confirm measurements, pick the correct model, and plan the install path.
-          </p>
-          <p class="bigText">
-            For many Utah homeowners, the best approach is a “two-track plan.”
-            First, you request a fast quote and a recommended model list.
-            Then you decide whether you want a coordinated professional install option or a DIY savings path.
-            Either way, you avoid the mistake of choosing a tub before you know what actually fits.
-          </p>
-
-          <div class="callout" style="margin-top:14px;">
-            <strong>Helpful Utah resources (non-competitive):</strong>
-            <div class="mini">
-              Utah Aging services: <a href="https://daas.utah.gov/" target="_blank" rel="noopener">Division of Aging & Adult Services</a><br>
-              Utah fall prevention + home safety: <a href="https://ucoa.utah.edu/fpa/home-safety.php" target="_blank" rel="noopener">Utah Commission on Aging – Home Safety</a><br>
-              Find your local support region: <a href="https://ucoa.utah.edu/area-agencies-on-aging.php" target="_blank" rel="noopener">Area Agencies on Aging (Utah)</a><br>
-              Manufacturer background (Chicago-based): <a href="https://ellasbubbles.com/about/" target="_blank" rel="noopener">Ella’s Bubbles – About</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="section" style="padding-top:8px;">
-        <div class="twoCol">
-          <div class="card" style="padding:22px;">
-            <p class="bigTitle">The 5 decisions that make or break your purchase</p>
-            <p class="bigText">
-              If you want a walk in tub you’ll still like years from now, you need to make a few decisions in the right order.
-              Otherwise, you end up chasing fixes after the tub arrives.
-              So here’s the practical order that works.
-            </p>
-
-            <p class="bigText"><strong>1) Bathroom fit and door clearance.</strong> Measure the existing tub footprint and confirm the clear path where you step in and sit. This prevents the “it technically fits, but it feels tight” problem.</p>
-            <p class="bigText"><strong>2) Seat comfort and entry style.</strong> Seat height, back angle, and door type are the difference between “I can use it” and “I enjoy it.”</p>
-            <p class="bigText"><strong>3) Drain expectations.</strong> Some people are fine with typical drain times. Others are not. If waiting will frustrate you, plan for faster-drain models and confirm your home plumbing setup.</p>
-            <p class="bigText"><strong>4) Hydrotherapy (optional) based on your real goal.</strong> Some buyers want deep soaking comfort. Others want targeted jets. If you choose hydrotherapy, you should know what you’re paying for.</p>
-            <p class="bigText"><strong>5) Installation path: fast install option or DIY savings.</strong> Utah homeowners often appreciate the flexibility. We can guide either path, and you decide what makes sense.</p>
-
-            <div class="callout" style="margin-top:14px;">
-              <strong>Want a curated list of models?</strong> Use the main tub gateway and product pages, then come back here to request your Utah quote.
-              <div class="mini">
-                Explore tubs: <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">All Walk In Tubs</a> •
-                Hydrotherapy: <a href="https://www.agingsafelybaths.com/hydrotherapy-bathtub/" target="_blank" rel="noopener">Hydrotherapy Bathtub</a> •
-                Therapeutic overview: <a href="https://www.agingsafelybaths.com/therapeutic-benefits/" target="_blank" rel="noopener">Therapeutic Benefits</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="padding:22px;">
-            <p class="bigTitle" id="pricing">Budget, value, and how to avoid overpaying</p>
-            <p class="bigText">
-              It’s normal to worry about price.
-              Still, the bigger risk is paying for the wrong features.
-              That’s how buyers end up with a tub that looks impressive but feels inconvenient.
-              So we frame “budget” as a value decision: pay for the things you will use every week.
-            </p>
-            <p class="bigText">
-              If your main goal is safer bathing and easier entry, prioritize comfortable seating and door access.
-              If your main goal is soothing relief after a long day, then hydrotherapy may be worth it.
-              And if your main goal is future mobility planning, we should also discuss whether a roll in shower is a better long-term fit.
-            </p>
-            <p class="bigText">
-              For homeowners comparing options, it can help to think in “regret prevention.”
-              A tub that is $1,000 cheaper can still cost more in frustration, poor fit, or rework.
-              On the other hand, the best purchases feel simple.
-              They fit.
-              They drain reasonably.
-              They are easy to sit in and stand up from.
-              That’s the real win.
-            </p>
-
-            <div class="chartCard" aria-label="Feature value chart">
-              <h4>Feature value (typical homeowner priorities)</h4>
-              <div class="bars">
-                <div class="barRow">
-                  <div class="barLabel">Comfortable seat + entry</div>
-                  <div class="bar"><span style="width:92%"></span></div>
-                  <div class="barNum">High</div>
-                </div>
-                <div class="barRow">
-                  <div class="barLabel">Drain strategy</div>
-                  <div class="bar"><span style="width:78%"></span></div>
-                  <div class="barNum">High</div>
-                </div>
-                <div class="barRow">
-                  <div class="barLabel">Hydrotherapy jets</div>
-                  <div class="bar"><span style="width:62%"></span></div>
-                  <div class="barNum">Med</div>
-                </div>
-                <div class="barRow">
-                  <div class="barLabel">Heated surfaces</div>
-                  <div class="bar"><span style="width:48%"></span></div>
-                  <div class="barNum">Med</div>
-                </div>
-                <div class="barRow">
-                  <div class="barLabel">Extra luxury upgrades</div>
-                  <div class="bar"><span style="width:30%"></span></div>
-                  <div class="barNum">Low</div>
-                </div>
-              </div>
-              <p class="help">This is not a promise of outcomes. It’s a practical way to prioritize what most buyers actually use.</p>
-            </div>
-
-            <div class="callout" style="margin-top:14px;">
-              <strong>If wheelchair access is part of the plan:</strong> consider comparing tubs to barrier-free shower systems too.
-              <div class="mini">
-                See roll-in options: <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank" rel="noopener">Handicap Showers</a> •
-                Shop barrier-free kits: <a href="https://showers4less.com/" target="_blank" rel="noopener">Showers4Less.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="padding:22px; margin-top:18px;">
-          <p class="bigTitle">A simple Utah sizing checklist that prevents expensive mistakes</p>
-          <p class="bigText">
-            Utah homes vary.
-            You’ll see classic single-family bathrooms, mountain cabins with tight layouts, and remodel-ready spaces in newer builds.
-            Because of that, the best “first step” is not picking a brand.
-            It’s verifying fit and daily movement.
-          </p>
-          <p class="bigText">
-            Here is the checklist we recommend for nearly every Utah buyer:
-            confirm the tub footprint, confirm where the door will open, confirm you can step in and sit without twisting, confirm where the drain line is located, and confirm your water heater capacity if you want a larger soaking tub.
-            Then decide on upgrades like hydrotherapy and heated surfaces.
-            Finally, choose your install path.
-          </p>
-          <p class="bigText">
-            When you follow this order, your decision feels calm.
-            You’re not guessing.
-            You’re not relying on one picture online.
-            And you’re not hoping the installer “figures it out.”
-            Instead, you buy the tub that matches your home and your needs.
-          </p>
-
-          <div class="imgRow" aria-label="Additional image variety">
-            <figure class="imgTile">
-              <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/09/3055-002_0.jpeg" alt="Digital controls for a walk in tub" loading="lazy">
-              <figcaption>Controls should be easy to reach and simple to understand.</figcaption>
-            </figure>
-            <figure class="imgTile">
-              <img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/08/4-deluxe-massage-LH-1000.jpg" alt="Hydrotherapy jets and drain inside a walk in tub" loading="lazy">
-              <figcaption>Hydrotherapy can be a comfort upgrade when it matches your goal.</figcaption>
-            </figure>
-            <figure class="imgTile">
-              <img src="https://www.agingsafelybaths.com/wp-content/uploads/2023/03/walk-in-tub-cost-image.jpg" alt="Walk in tub being tested with water for leaks and jet test" loading="lazy">
-              <figcaption>Testing matters. Ask about inspection, jet testing, and quality checks.</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="twoCol" style="margin-top:18px;">
-          <div class="card" style="padding:22px;">
-            <p class="bigTitle">Made and supported by real manufacturing—not mystery brands</p>
-            <p class="bigText">
-              Many buyers in Utah start by searching online and quickly run into dozens of brands that look the same.
-              That’s when it helps to anchor your decision in something real: where the tub is made, how the company supports it, and whether the models are engineered for the features you care about.
-            </p>
-            <p class="bigText">
-              We are an Ella’s Bubbles dealer network.
-              They are known for acrylic walk in tubs and accessible bathing products.
-              Their manufacturer information is publicly available, and that matters because you can verify what you’re buying.
-              If you prefer to start with that background, use the manufacturer page and then we’ll guide you to a model that fits your bathroom and budget.
-            </p>
-            <p class="bigText">
-              Learn more here: <a href="https://ellasbubbles.com/about/" target="_blank" rel="noopener">Ella’s Bubbles – About</a>.
-              Then, if you want to browse tubs and compare layouts, use the main gateway at
-              <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">AgingSafelyBaths.com/walk-in-tubs</a>.
-            </p>
-
-            <div class="callout" style="margin-top:14px;">
-              <strong>Utah-specific anchor link:</strong> This is the matching state page on the main site (helpful for authority and consistency).
-              <div class="mini">
-                <a href="https://www.agingsafelybaths.com/locations/arizona-walk-in-tubs-roll-in-showers/" target="_blank" rel="noopener" aria-label="Note: placeholder link">Note:</a>
-                For Utah we will link to the Utah location page once confirmed on the main site.
-              </div>
-              <div class="mini" style="margin-top:10px;">
-                (If you already have a Utah location URL on AgingSafelyBaths, replace the link above with it. Everything else stays the same.)
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="padding:22px;">
-            <p class="bigTitle">When a roll in shower is the smarter move</p>
-            <p class="bigText">
-              Some Utah families start with a walk in tub and later realize that a barrier-free shower would have fit their long-term plan better.
-              That’s why we bring it up early.
-              Not to distract you, but to help you choose correctly the first time.
-            </p>
-            <p class="bigText">
-              If you need a wide open entry, wheelchair turning space, or a truly step-free transition, then you should also compare roll in shower systems.
-              In many bathrooms, a barrier-free shower creates the simplest daily routine.
-              However, if soaking and hydrotherapy comfort are important, a walk in tub may be the better fit.
-              We’ll help you weigh the decision based on how you move today and what you expect over time.
-            </p>
-            <p class="bigText">
-              Helpful pages to compare:
-              <a href="https://www.agingsafelybaths.com/roll-in-shower-guide/" target="_blank" rel="noopener">Roll In Shower Guide</a>,
-              <a href="https://showers4less.com/pages/utah-roll-in-showers-and-ada-shower-kits" target="_blank" rel="noopener">Showers4Less Utah roll in showers</a>.
-            </p>
-
-            <div class="callout" style="margin-top:14px;">
-              <strong>Good decision-making feels calm.</strong>
-              <div class="mini">
-                If you’re unsure, call us. We’ll help you pick the option that supports independence and comfort without forcing a complicated remodel path.
-              </div>
-              <div class="mini" style="margin-top:10px;">
-                Call <a href="tel:18887792284">1-888-779-2284 (BATH)</a> or email <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <section class="section" id="form" style="padding-top: 8px;">
-          <div class="twoCol">
-            <div class="card" style="padding:22px;">
-              <p class="bigTitle">Get a fast quote and a recommended model list</p>
-              <p class="bigText">
-                If you tell us your zip code, a couple measurements, and what matters most—comfort, drain speed, hydrotherapy, or transfer ease—we can narrow the options quickly.
-                Then you can compare models without feeling overwhelmed.
-              </p>
-              <p class="bigText">
-                Many Utah homeowners like to start with a clear short list.
-                It saves time.
-                It also prevents the “too many tabs open” problem where every tub looks similar.
-              </p>
-              <p class="bigText">
-                You can also browse specific product examples on the main site:
-                <a href="https://www.agingsafelybaths.com/product/low-profile-walk-in-tub/" target="_blank" rel="noopener">low profile tub with a door</a>,
-                <a href="https://www.agingsafelybaths.com/product/bariatric-walk-in-tub/" target="_blank" rel="noopener">bariatric 35 x 55</a>,
-                or a <a href="https://www.agingsafelybaths.com/product/wheelchair-accessible-bathtub/" target="_blank" rel="noopener">wheelchair transfer style tub</a>.
-                However, the fastest path is still: send your details, and we recommend the right fit first.
-              </p>
-
-              <div class="callout" style="margin-top:14px;">
-                <strong>DIY savings option:</strong> We can ship and coordinate delivery so your contractor installs on your schedule.
-                <div class="mini">This is a popular choice for homeowners who already have a trusted installer.</div>
-              </div>
-            </div>
-
-            <div class="formCard" aria-label="Quote request form">
-              <div class="formHeader">
-                <div class="topline">
-                  <div class="badge">FAST QUOTE • UTAH COVERAGE</div>
-                  <a class="btn" href="tel:18887792284">Call Now</a>
-                </div>
-                <h3>Request Your Utah Walk In Tub Quote</h3>
-                <p>Simple form. No gimmicks. We’ll respond with recommended options and a clear next step.</p>
-              </div>
-
-              <form id="quoteForm" class="formBody" novalidate>
-                <input type="hidden" name="source_site" value="utahwalkintubs.com" />
-
-                <div class="grid2">
-                  <div>
-                    <label for="user_name">Full Name</label>
-                    <input class="field" id="user_name" name="user_name" type="text" placeholder="Your name" required />
-                  </div>
-                  <div>
-                    <label for="user_phone">Phone Number</label>
-                    <input class="field" id="user_phone" name="user_phone" type="tel" placeholder="Best number to reach you" required />
-                    <p class="help">We can call or text—whichever you prefer.</p>
-                  </div>
-                </div>
-
-                <div class="grid2" style="margin-top:12px;">
-                  <div>
-                    <label for="user_zip">ZIP Code</label>
-                    <input class="field" id="user_zip" name="user_zip" type="text" inputmode="numeric" placeholder="Utah ZIP code" required />
-                  </div>
-                  <div>
-                    <label for="user_email">Email (optional)</label>
-                    <input class="field" id="user_email" name="user_email" type="email" placeholder="Email for quote details" />
-                  </div>
-                </div>
-
-                <div style="margin-top:12px;">
-                  <label for="user_message">What are you looking for? (optional)</label>
-                  <textarea class="field" id="user_message" name="user_message" placeholder="Example: outward swing door, fast drain, hydrotherapy, transfer-friendly seat, bathroom size concerns, timeline..."></textarea>
-                </div>
-
-                <div class="formFooter">
-                  <div class="trustRow" aria-label="Trust indicators">
-                    <div class="trustPill">
-                      <span class="dot" aria-hidden="true"></span>
-                      Clear options
-                      <span>One day install paths or DIY delivery savings.</span>
-                    </div>
-                    <div class="trustPill">
-                      <span class="dot" aria-hidden="true"></span>
-                      Fit-first guidance
-                      <span>We recommend models that match your bathroom layout.</span>
-                    </div>
-                  </div>
-
-                  <div class="submitRow">
-                    <button class="submitBtn" type="submit">Get My Fast Quote</button>
-                    <div id="formStatus" role="status" aria-live="polite"></div>
-                  </div>
-                  <p class="smallNote" style="margin-top:10px;">
-                    Prefer email? Write us at <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.
-                    If you need help now, call <a href="tel:18887792284">1-888-779-2284 (BATH)</a>.
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="card" style="padding:22px; margin-top:18px;">
-            <p class="bigTitle" id="faq">FAQ (quick answers that help you choose correctly)</p>
-            <p class="bigText">
-              These are the questions we hear most from Utah homeowners and adult children helping parents.
-              If you want a personalized answer, call <a href="tel:18887792284">1-888-779-2284 (BATH)</a>.
-            </p>
-
-            <div class="faqWrap">
-              <details>
-                <summary>How do I know if a walk in tub will fit my Utah bathroom?</summary>
-                <p>Measure the existing tub footprint and confirm door clearance in the area where you step in and sit. Then confirm drain placement and whether your home needs any minor plumbing adjustments. If you share photos and rough measurements, we can recommend models that fit without forcing a full remodel.</p>
-              </details>
-              <details>
-                <summary>What features matter most for comfort without overspending?</summary>
-                <p>Start with seat comfort, door opening feel, and easy controls. Then decide on drain strategy and hydrotherapy based on your real goal. The right tub is the one you will use comfortably every week.</p>
-              </details>
-              <details>
-                <summary>Is one day installation available in Utah?</summary>
-                <p>In many areas, fast installation options can be coordinated. If your bathroom needs additional work, we’ll explain the timeline up front. DIY delivery is also available if you want maximum savings and flexibility.</p>
-              </details>
-              <details>
-                <summary>Do outward swing doors work better?</summary>
-                <p>Many buyers prefer outward swing because entry can feel more open. However, the best door choice depends on bathroom clearance and how you transfer and sit. We help you pick what fits your space and movement style.</p>
-              </details>
-              <details>
-                <summary>How long does it take to drain?</summary>
-                <p>Drain time depends on tub size, plumbing, and model design. If waiting will bother you, focus on models engineered for quicker draining and confirm your home’s drain line setup.</p>
-              </details>
-              <details>
-                <summary>Should I consider a roll in shower instead?</summary>
-                <p>If wheelchair access and step-free entry are top priorities, a barrier-free shower may be best. If soaking comfort and hydrotherapy are important, a walk in tub may be the better fit. We can help you compare both so you choose correctly the first time.</p>
-              </details>
-              <details>
-                <summary>Can you help if I have arthritis or balance issues?</summary>
-                <p>Yes. We’ll focus on seat height, hand placement, door opening, and controls that are easy to use. We can also recommend comfort features that many people find helpful day to day.</p>
-              </details>
-            </div>
-          </div>
-
-          <div class="card" style="padding:22px; margin-top:18px;">
-            <p class="bigTitle">Accessibility statement</p>
-            <p class="bigText">
-              UtahWalkInTubs.com is designed to be readable and usable for seniors, caregivers, and visitors using assistive technologies.
-              If you experience any difficulty viewing content, navigating the site, or using the quote form, please email
-              <a href="mailto:accessibility@agingsafelybaths.com">accessibility@agingsafelybaths.com</a>.
-              You can also call <a href="tel:18887792284">1-888-779-2284 (BATH)</a> for assistance.
-            </p>
-          </div>
-        </section>
-      </section>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footerInner">
-      <div>
-        <p class="footTitle">UtahWalkInTubs.com</p>
-        <p class="footText">
-          A Utah-focused informational and quote site connected to the Aging Safely Baths dealer network.
-          Explore detailed guides on the main site, then request a fast quote here when you’re ready.
-        </p>
-        <p class="footText" style="margin-top:10px;">
-          Helpful links:
-          <a href="https://www.agingsafelybaths.com/walk-in-tub-guide/" target="_blank" rel="noopener">Walk In Tub Guide</a> •
-          <a href="https://www.agingsafelybaths.com/roll-in-shower-guide/" target="_blank" rel="noopener">Roll In Shower Guide</a> •
-          <a href="https://showers4less.com/" target="_blank" rel="noopener">Showers4Less</a>
-        </p>
-      </div>
-
-      <div class="footLinks" aria-label="Footer links">
+    <div>
+      <p class="footTitle">Site Navigation</p>
+      <div class="footLinks">
         <a href="#choose">Choose the Right Tub</a>
-        <a href="#pricing">Budget & Value</a>
-        <a href="#form">Get a Quote</a>
+        <a href="#pricing">Budget &amp; Value</a>
+        <a href="#utah">Utah County Coverage</a>
+        <a href="#form">Get a Fast Quote</a>
         <a href="#faq">FAQ</a>
         <a href="/sitemap.xml">XML Sitemap</a>
       </div>
     </div>
 
-    <div class="legal">
-      <div class="legalInner">
-        <div>Copyright 2026 • UtahWalkInTubs.com</div>
-        <div>
-          <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a> •
-          <a href="tel:18887792284">1-888-779-2284 (BATH)</a>
-        </div>
+    <div>
+      <p class="footTitle">Utah Resources</p>
+      <div class="footLinks">
+        <a href="https://daas.utah.gov/" target="_blank" rel="noopener">Utah Division of Aging &amp; Adult Services</a>
+        <a href="https://ucoa.utah.edu/fpa/home-safety.php" target="_blank" rel="noopener">Utah Commission on Aging – Home Safety</a>
+        <a href="https://ucoa.utah.edu/area-agencies-on-aging.php" target="_blank" rel="noopener">Utah Area Agencies on Aging</a>
+        <a href="https://www.agingsafelybaths.com/therapeutic-benefits/" target="_blank" rel="noopener">Hydrotherapy Benefits</a>
+        <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank" rel="noopener">Handicap &amp; Roll-In Showers</a>
+        <a href="https://ellasbubbles.com/about/" target="_blank" rel="noopener">Ella's Bubbles – Manufacturer</a>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- EmailJS Browser v4 -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <div class="legal">
+    <div class="legalInner">
+      <div>Copyright 2026 • UtahWalkInTubs.com • Powered by Aging Safely Baths</div>
+      <div>
+        <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a> •
+        <a href="tel:18887792284">1-888-779-2284 (BATH)</a> •
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
+<!-- ============================================================
+     HAMBURGER JS
+============================================================ -->
+<script>
+function toggleMenu(btn) {
+  const nav = document.getElementById('mobileNav');
+  const open = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!open));
+  if (!open) { nav.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  else { closeMenu(); }
+}
+function closeMenu() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.querySelector('.hamburger');
+  nav.classList.remove('open');
+  document.body.style.overflow = '';
+  if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+function closeMenuOnOverlay(e) { if (e.target === document.getElementById('mobileNav')) closeMenu(); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+</script>
 
-    const EMAILJS_PUBLIC_KEY  = "alWutsHLG6c3h9P2j";
-    const EMAILJS_SERVICE_ID = "service_usimtub";
-    const EMAILJS_TEMPLATE_ID = "template_5n0cskt";
-
-    const form = document.getElementById("quoteForm");
-    const statusEl = document.getElementById("formStatus");
-
-    if (!form) {
-      console.error("quoteForm not found.");
-      return;
-    }
-
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      if (statusEl) {
-        statusEl.style.color = "#0a6f7f";
-        statusEl.textContent = "Sending…";
+<!-- ============================================================
+     BAR CHART ANIMATION
+============================================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.bar span[data-w]').forEach(span => {
+          span.style.width = span.getAttribute('data-w') + '%';
+        });
+        observer.unobserve(entry.target);
       }
-
-      emailjs.sendForm(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        form
-      ).then(
-        function () {
-          if (statusEl) {
-            statusEl.style.color = "#1b7f5a";
-            statusEl.textContent = "Success! We received your request and will reach out shortly.";
-          }
-          form.reset();
-        },
-        function (error) {
-          if (statusEl) {
-            statusEl.style.color = "#d94532";
-            statusEl.textContent = "There was a problem sending your request. Please try again.";
-          }
-          console.error("EmailJS error:", error);
-        }
-      );
     });
+  }, { threshold: 0.3 });
+  const chart = document.getElementById('barChart');
+  if (chart) observer.observe(chart);
+});
+</script>
 
+<!-- ============================================================
+     EMAILJS v4 — VERIFIED CONFIG
+============================================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const EMAILJS_PUBLIC_KEY  = 'alWutsHLG6c3h9P2j';
+  const EMAILJS_SERVICE_ID  = 'service_usimtub';
+  const EMAILJS_TEMPLATE_ID = 'template_5n0cskt';
+
+  const form     = document.getElementById('quoteForm');
+  const statusEl = document.getElementById('formStatus');
+
+  if (!form) { console.error('quoteForm not found.'); return; }
+
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (statusEl) { statusEl.style.color = '#0a6f7f'; statusEl.textContent = 'Sending…'; }
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+      .then(function () {
+        if (statusEl) { statusEl.style.color = '#1b7f5a'; statusEl.textContent = '✓ Request received! We\'ll follow up with Utah pricing shortly.'; }
+        form.reset();
+      }, function (err) {
+        console.error('EmailJS error:', err);
+        if (statusEl) { statusEl.style.color = '#b35300'; statusEl.textContent = 'There was a problem. Please call 1-888-779-2284 (BATH) directly.'; }
+      });
   });
-  </script>
+});
+</script>
+
 </body>
 </html>
