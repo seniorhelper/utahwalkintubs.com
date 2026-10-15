@@ -1,4 +1,3 @@
-# FILE: robots.txt
 User-agent: *
 Allow: /
 
