@@ -198,5 +198,6 @@ f.addEventListener('submit',function(e){e.preventDefault();if(busy)return;
  fetch('https://api.emailjs.com/api/v1.0/email/send-form',{method:'POST',body:d}).then(function(r){return r.text().then(function(t){return r.ok&&t.trim()==='OK'})}).catch(function(){return false}).then(function(ok){busy=false;btn.disabled=false;
   if(ok){say('Thank you. Your request was sent. A person from our team will call or text you to talk it through.','ok');f.reset()}
   else{say('Sorry, your request did not go through. Please call 1-888-779-2284 or email sales@agingsafelybaths.com and we will help right away.','err')}})})})();</script>
+<script src="/lead-send.js" defer></script>
 </body>
 </html>
