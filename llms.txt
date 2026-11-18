@@ -1,9 +1,9 @@
 # Utah Walk In Tubs
 
-> Utah information and quote site for walk-in tubs and accessible bathing, from Aging Safely Baths (operating since 2012, BBB accredited). Installation anywhere in Utah, often in one day, or supply-only delivery for your own licensed plumber. Free written quotes; no in-home sales presentation required. Phone 1-888-779-2284, email sales@agingsafelybaths.com.
+> Utah information and quote site for walk-in tubs and accessible bathing, from Aging Safely Baths (operating since 2012, BBB accredited). Installation anywhere in Utah, often in one day, or supply-only delivery for your own licensed plumber. Free written quotes by phone or from photos; no high-pressure sales visit. A factory-certified tech does a full site visit before install. Phone 1-888-779-2284, email sales@agingsafelybaths.com.
 
 ## Guides
-- [Walk-In Tub Cost in Utah: What Changes the Price](https://utahwalkintubs.com/walk-in-tub-cost-utah/): what changes a Utah walk-in tub price (model, house age, hot water, wiring, travel) and the line items a fair quote lists; no prices published on this site
+- [Walk-In Tub Cost in Utah: What Changes the Price](https://utahwalkintubs.com/walk-in-tub-cost-utah/): what changes a Utah walk-in tub price (model, house age, hot water, wiring, travel), the line items a fair quote lists, and the Aging Safely Baths published installed ranges ($15,250 to $20,000 walk-in tub; $13,500 to $17,000 roll-in shower)
 - [Walk-In Tub Installation in Utah: Licensing, Hot Water](https://utahwalkintubs.com/walk-in-tub-installation-utah/): install day, Utah licensing (Utah Code 58-55-305 as amended 2024: plumbing work needs a licensed plumbing contractor), permits, and a winter hot-water check
 - [Paying for a Walk-In Tub in Utah: VA, Medicaid, AAAs](https://utahwalkintubs.com/paying-for-a-walk-in-tub-utah/): VA HISA ($6,800 or $2,000 lifetime), Utah Medicaid Aging Waiver and New Choices Waiver, USDA Section 504, Medicare, and every Utah Area Agency on Aging
 - [Utah Medicaid Waiver Bathroom Modifications: Aging vs New Choices](https://utahwalkintubs.com/utah-medicaid-waiver-bathroom-modifications/): who qualifies for the Aging Waiver (65+, at home, waiting list) vs the New Choices Waiver (18+, moving home from a nursing facility or assisted living), the S5165 Environmental Accessibility Adaptations service (ramps, grab bars, bathroom, plumbing and electrical modifications), enrolled-provider and Utah contractor-license rules, how to apply (801-538-3910 Aging; 801-538-6155 option 6 New Choices), and that no dollar cap is published
@@ -11,7 +11,7 @@
 - [Older Utahns by County: Census Data on Age and Disability](https://utahwalkintubs.com/utah-older-adults-data/): Census ACS 2019-2023 figures for all 29 Utah counties and major cities: 65+ and 75+ counts and shares, median age, disability after 65, housing age
 
 ## Utah cities
-- [Salt Lake City Walk-In Tubs for Older Homes](https://utahwalkintubs.com/salt-lake-city-walk-in-tubs/): older homes, renters, city water, Salt Lake County Aging and Adult Services, VA medical center
+- [Walk-In Tubs Salt Lake City | Older Homes, Cost, Permits](https://utahwalkintubs.com/salt-lake-city-walk-in-tubs/): published installed prices, Salt Lake City permit rules (plumbing/electrical alterations need a permit; Citizen Access Portal; owner-builder option), pre-1960 housing chart, renters, city water, county aging services, VA, FAQ
 - [Provo and Orem Walk-In Tubs: A Utah County Guide](https://utahwalkintubs.com/provo-orem-walk-in-tubs/): planning for a parent in Utah County, Mountainland aging services, Orem VA clinic
 - [Ogden Walk-In Tubs: Weber County Homes and Help](https://utahwalkintubs.com/ogden-walk-in-tubs/): older two-story homes, Weber Area Agency on Aging, South Ogden VA clinic
 - [St. George Walk-In Tubs: A Washington County Guide](https://utahwalkintubs.com/st-george-walk-in-tubs/): oldest large-city population in Utah, newer homes, hard water, Five County AAA, St. George VA clinic
@@ -24,3 +24,6 @@
 - Brands sold and installed: Ella's Bubbles (authorized dealer), Hydro Dimensions, Bestbath (including RANE) and Meditub.
 - Original Medicare generally does not cover walk-in tubs.
 - Census figures: Utah has 387,028 residents 65+ (11.6%); median age 31.7, the lowest of any state.
+- Published installed prices (Aging Safely Baths, Nov 2026): walk-in tub $15,250 to $20,000 after current promotions; roll-in shower $13,500 to $17,000. Most installs take 1 day.
+- Process: free written quote by phone or from photos, no high-pressure sales visit; after a deposit a factory-certified tech does a full site visit before install.
+- Machine-readable business facts: https://www.agingsafelybaths.com/facts.json
